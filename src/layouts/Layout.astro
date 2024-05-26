@@ -1,0 +1,338 @@
+---
+import config from "../config.json";
+import { ViewTransitions } from "astro:transitions";
+import "@/style/global.css";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { plainify } from "../lib/text-converter";
+import CookieConsent from "../components/CookieConsent.astro";
+import { ScrollUpButton } from "../components/ScrollUpButton";
+import {
+  tr,
+  type SupportedLanguage,
+  type Translations,
+} from "@/lib/translation";
+import type { LocalizedPaths } from "@/lib/translation";
+import { getEnv } from "@/lib/get-env";
+import { sanitizeUrl } from "@/lib/utils";
+
+//const MIXPANEL_TOKEN = import.meta.env.MIXPANEL_TOKEN
+
+export interface Image {
+  src: string;
+  width: number;
+  height: number;
+  format: "png" | "jpg" | "jpeg" | "tiff" | "webp" | "gif" | "svg" | "avif";
+}
+
+export interface Props {
+  title?: string;
+  meta_title?: string;
+  description?: string;
+  image?: Image | string;
+  noindex?: boolean;
+  canonical?: string;
+  language: SupportedLanguage;
+  localizedPaths: LocalizedPaths;
+  translations: Translations;
+}
+
+let {
+  title,
+  meta_title,
+  description,
+  image,
+  noindex,
+  canonical,
+  language,
+  localizedPaths,
+  translations,
+} = Astro.props;
+
+// construct canonical url because we're serving under differetn domains
+// and don't want search engines to punish us for duplicate content
+if (!canonical) {
+  canonical = sanitizeUrl(`${getEnv("PUBLIC_URL")}${localizedPaths[language]}`);
+}
+---
+
+<!DOCTYPE html>
+<html lang={language}>
+  <head
+    prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#"
+  >
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+    <script>
+      import { computeCurrentTheme, syncThemeOnDoc } from "@/lib/theme";
+      const theme = computeCurrentTheme();
+      syncThemeOnDoc(theme);
+    </script>
+
+    <ViewTransitions />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="preload"
+      href="/fonts/Geist-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/Geist-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <style>
+      @font-face {
+        font-family: "GeistSans";
+        src: url("/fonts/Geist-Light.woff2") format("woff2");
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "GeistSans";
+        src: url("/fonts/Geist-Medium.woff2") format("woff2");
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "GeistSans";
+        src: url("/fonts/Geist-Bold.woff2") format("woff2");
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "GeistSans";
+        src: url("/fonts/Geist-Regular.woff2") format("woff2");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+
+    <link rel="icon" type="image/svg+xml" href="/icons/logo.png" />
+
+    <!-- responsive meta -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=yes"
+    />
+
+    <!-- title -->
+    <title>
+      {
+        plainify(
+          meta_title
+            ? meta_title
+            : title
+            ? title
+            : tr("title", translations, language)
+        )
+      }
+    </title>
+
+    <ViewTransitions />
+
+    <!-- canonical url -->
+    {canonical && <link rel="canonical" href={canonical} item-prop="url" />}
+
+    <!-- noindex robots -->
+    {noindex && <meta name="robots" content="noindex,nofollow" />}
+
+    <!-- meta-description -->
+    <meta
+      name="description"
+      content={plainify(
+        description ? description : tr("og.description", translations, language)
+      )}
+    />
+
+    <!-- author from config.json -->
+    <meta name="author" content={config.legalName} />
+
+    <!-- og-title -->
+    <meta
+      property="og:title"
+      content={plainify(
+        meta_title
+          ? meta_title
+          : title
+          ? title
+          : tr("og.title", translations, language)
+      )}
+    />
+
+    <!-- og-description -->
+    <meta
+      property="og:description"
+      content={plainify(
+        description ? description : tr("og.description", translations, language)
+      )}
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={tr("og.url", translations, language)} />
+
+    <!-- twitter-title -->
+    <meta
+      name="twitter:title"
+      content={plainify(
+        meta_title
+          ? meta_title
+          : title
+          ? title
+          : tr("og.title", translations, language)
+      )}
+    />
+
+    <!-- twitter-description -->
+    <meta
+      name="twitter:description"
+      content={plainify(
+        description ? description : tr("og.description", translations, language)
+      )}
+    />
+
+    <!-- og-image -->
+    <meta
+      property="og:image"
+      content={`${getEnv("PUBLIC_URL")}${
+        image ? image : tr("og.image", translations, language)
+      }`}
+    />
+
+    <!-- twitter-image -->
+    <meta
+      name="twitter:image"
+      content={`${getEnv("PUBLIC_URL")}${
+        image ? image : tr("og.image", translations, language)
+      }`}
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script is:inline>
+      if (
+        localStorage.getItem("redaktool_website_theme") === '"dark"' ||
+        (!("redaktool_website_theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.querySelector("html").classList.add("dark");
+      } else {
+        document.querySelector("html").classList.remove("dark");
+      }
+    </script>
+
+    <script>
+      import { cookiePolicyConfig } from "../cookiePolicy";
+      window.astroCookieConsentConfig = cookiePolicyConfig;
+    </script>
+
+    <link rel="preconnect" href="https://web-sdk.smartlook.com" />
+
+    <link
+      rel="preload"
+      href="/icons/icon.svg"
+      as="image"
+      type="image/svg+xml"
+    />
+
+    <script>
+      import { init } from "@/lib/smartlook";
+      init();
+    </script>
+
+    <!-- Mixpanel -->
+    <!--
+     <script data-astro-cookie-consent="mixpanel" type="text">
+        (function(f,b){if(!b.__SV){var e,g,i,h;window.mixpanel=b;b._i=[];b.init=function(e,f,c){function g(a,d){var b=d.split(".");2==b.length&&(a=a[b[0]],d=b[1]);a[d]=function(){a.push([d].concat(Array.prototype.slice.call(arguments,0)))}}var a=b;"undefined"!==typeof c?a=b[c]=[]:c="mixpanel";a.people=a.people||[];a.toString=function(a){var d="mixpanel";"mixpanel"!==c&&(d+="."+c);a||(d+=" (stub)");return d};a.people.toString=function(){return a.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+        for(h=0;h<i.length;h++)g(a,i[h]);var j="set set_once union unset remove delete".split(" ");a.get_group=function(){function b(c){d[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));a.push([e,call2])}}for(var d={},e=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<j.length;c++)b(j[c]);return d};b._i.push([e,f,c])};b.__SV=1.2;e=f.createElement("script");e.type="text/javascript";e.async=!0;e.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";g=f.getElementsByTagName("script")[0];g.parentNode.insertBefore(e,g)}})(document,window.mixpanel||[]);
+      </script>
+
+      <script define:vars={{ MIXPANEL_TOKEN }}>
+        window.initMixpanel = () => {
+          if (!window._mixpanel_initialized) {
+            mixpanel.init(MIXPANEL_TOKEN, { debug: true, track_pageview: true, persistence: 'localStorage' });
+            window._mixpanel_initialized = true
+          } else {
+            mixpanel.track_pageview()
+          }
+        }
+      </script>
+     -->
+
+    <script>
+      import { scrollSmooth } from "../hooks/smooth-scroll";
+
+      const triggerScroll = () => {
+        if (window.location.hash.startsWith("#scroll=")) {
+          const sectionId = window.location.hash.split("=")[1];
+          scrollSmooth(sectionId);
+        }
+      };
+      window.onhashchange = triggerScroll;
+
+      document.addEventListener("astro:after-swap", () => {
+        triggerScroll();
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        triggerScroll();
+      });
+    </script>
+
+    <script>
+      /*
+      import { determineThemeBySystemPref, getThemeStored, syncThemeOnDoc } from "@/lib/theme";
+      syncThemeOnDoc(determineThemeBySystemPref(getThemeStored()))
+      */
+    </script>
+  </head>
+  <body>
+    <div class="flex flex-col min-h-[100vh] w-[100vw] items-center">
+      <CookieConsent />
+
+      <Header
+        suppressHydrationWarning
+        client:load
+        language={language}
+        localizedPaths={localizedPaths}
+        translations={translations}
+      />
+
+      <main class="flex-1 w-[100vw]">
+        <slot />
+      </main>
+
+      <Footer
+        suppressHydrationWarning
+        client:visible
+        language={language}
+        localizedPaths={localizedPaths}
+        translations={translations}
+      />
+
+      <ScrollUpButton suppressHydrationWarning client:only="react" />
+
+      <!--
+      <script data-astro-cookie-consent="mixpanel" type="text">
+        window.initMixpanel()      
+      </script>
+       -->
+    </div>
+  </body>
+</html>

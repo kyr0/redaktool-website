@@ -1,0 +1,37 @@
+# currently disabled, as the build process runs on Vercel right now
+name: GitHub Actions Vercel Production Deployment
+env:
+  PUBLIC_URL: ${{ secrets.PUBLIC_URL }}
+  PUBLIC_SMARTLOOK_API_KEY: ${{ secrets.PUBLIC_SMARTLOOK_API_KEY }}
+  ELASTIC_MAIL_API_KEY: ${{ secrets.ELASTIC_MAIL_API_KEY }}
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+  VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+  ATLAS_WEBSITE_ADMIN_PASSWORD: ${{ secrets.ATLAS_WEBSITE_ADMIN_PASSWORD }}
+  ATLAS_WEBSITE_ADMIN: ${{ secrets.ATLAS_WEBSITE_ADMIN }}
+  ATLAS_WEBSITE_HOST: ${{ secrets.ATLAS_WEBSITE_HOST }}
+  VERCEL_ENV: production
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  Deploy-Production:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20.11
+          cache: 'npm'
+      - name: Install Vercel CLI
+        run: npm install --global vercel@canary
+      - name: Install Dependencies
+        run: npm ci
+      - name: Pull Vercel Environment Information
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Build Project Artifacts
+        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Deploy Project Artifacts to Vercel
+        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}

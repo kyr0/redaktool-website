@@ -1,0 +1,17 @@
+---
+export interface Props {
+    videoUrl: string;
+    class?: string;
+}
+const { videoUrl, class: className } = Astro.props
+---
+<style>
+    iframe[data-astro-cookie-consent="youtube"] {
+        border-radius: 0.5rem;
+    }
+</style>
+<center>
+
+    <iframe width="560" height="315" data-astro-cookie-consent="youtube" consent-src={videoUrl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen  class={className}></iframe>
+   
+</center>

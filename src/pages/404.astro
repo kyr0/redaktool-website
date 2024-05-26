@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { getLocalization } from '@/lib/translation'
+const { language, localizedPaths } = getLocalization(Astro)
+
+export const  prerender = true
+import translations from "../translations"
+---
+
+<Layout language={language} localizedPaths={localizedPaths} translations={translations}>
+  <center class="m-32">
+    <h1 class="text-4xl">404 &ndash; not found</h1>
+    <p class="text-base mt-8">You've reached the end of this website.</p>
+  </center>
+</Layout>

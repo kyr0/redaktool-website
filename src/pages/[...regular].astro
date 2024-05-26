@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { getCollectionEntries } from "../lib/utils";
+import { markdownify } from "../lib/text-converter";
+import { getLocalization } from '@/lib/translation';
+import translations from "../translations"
+
+export const prerender = true
+
+export async function getStaticPaths() {
+  const pages = await getCollectionEntries("pages");
+
+  const allPages = [...pages];
+
+  const paths = allPages.map((page) => ({
+    params: {
+      regular: page.slug,
+    },
+    props: { page },
+  }));
+  return paths;
+}
+
+const { page } = Astro.props;
+
+const { title } = page.data;
+const { Content } = await page.render();
+const { description } = page.data;
+
+const { language, localizedPaths } = getLocalization(Astro)
+---
+<Layout language={language} localizedPaths={localizedPaths} translations={translations}>
+
+  <section class="w-full py-32 relative bg-gradient-to-tl from-gray-200 via-white to-white dark:from-gray-900 dark:via-black dark:to-black">
+    <div class="px-16 mx-auto max-w-[1300px]">
+      <div class="content">
+        <h1 set:html={markdownify(title)} />
+        <Content />
+      </div>
+    </div>
+  </section>
+</Layout>
+

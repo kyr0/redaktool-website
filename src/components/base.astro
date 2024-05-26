@@ -1,0 +1,173 @@
+---
+import Layout from "../layouts/Layout.astro";
+import BotExamplesSection from "@/components/sections/BotExamplesSection";
+import ComparisonSection from "@/components/sections/ComparisonSection";
+import { ContactSection } from "@/components/sections/ContactSection";
+import { FeaturesNgSection } from "@/components/sections/FeaturesNgSection";
+import { CustomerAppFeaturesSection } from "@/components/sections/CustomerAppFeaturesSection";
+import { HeroSection } from "@/components/sections/HeroSection";
+import { LeadershipSection } from "@/components/sections/LeadershipSection";
+import { LiveDemoMIddleSection } from "@/components/sections/LiveDemoMiddleSection";
+import ServicesSection from "@/components/sections/ServicesSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
+import { RegisterForWaitingList } from "@/components/sections/RegisterForWaitingList";
+import { getLocalization } from "@/lib/translation";
+import translations from "../translations";
+
+const { language, localizedPaths } = getLocalization(Astro);
+---
+
+<Layout
+  language={language}
+  localizedPaths={localizedPaths}
+  translations={translations}
+>
+  <div
+    class="rotating-background mt-20 flex dark:hidden"
+    style={{
+      backgroundSize: "contain",
+      backgroundImage: 'url("/icons/icon.svg")',
+      backgroundPositionX: "50%",
+      backgroundRepeat: "no-repeat",
+      transform: "rotate(0deg)",
+      opacity: 0.08,
+    }}
+  >
+  </div>
+  <div
+    class="rotating-background mt-20 hidden dark:flex"
+    style={{
+      backgroundSize: "contain",
+      backgroundImage: 'url("/icons/icon.svg")',
+      backgroundPositionX: "50%",
+      backgroundRepeat: "no-repeat",
+      transform: "rotate(0deg)",
+      opacity: 0.08,
+    }}
+  >
+  </div>
+
+  <HeroSection t={translations} l={language} client:load />
+  {/*<BotExamplesSection t={translations} l={language} client:visible />*/}
+  {/*<OurClientsSection />*/}
+  <FeaturesNgSection t={translations} l={language} client:visible />
+  <CustomerAppFeaturesSection t={translations} l={language} client:visible />
+  <RegisterForWaitingList t={translations} l={language} client:visible />
+  {/*<ComparisonSection t={translations} l={language} client:visible />*/}
+  {/*<LiveDemoMIddleSection t={translations} l={language} client:visible />*/}
+  {/*<ServicesSection t={translations} l={language} client:visible />*/}
+  {/*<CaseStudiesSection />*/}
+  <TestimonialsSection t={translations} l={language} client:visible />
+  {/*<LeadershipSection t={translations} l={language} client:visible />*/}
+  {/*<RegisterForLiveDemoSection />*/}
+  <ContactSection t={translations} l={language} client:visible />
+</Layout>
+
+<style is:inline>
+  html,
+  body {
+    font-size: 105% !important;
+  }
+
+  .rotating-background {
+    width: 100%;
+    height: 100%;
+    opacity: 0.05;
+    background-size: cover;
+    transition: transform 0.01s;
+    position: fixed; /* To make it stay in place while scrolling */
+    top: 0;
+    left: 0;
+    will-change: transform; /* Optimizes for animations */
+  }
+
+  .braced {
+    line-height: 1;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: auto;
+  }
+
+  .font-headings {
+    font-family: "Cairo Play", sans-serif;
+  }
+
+  .client-logo {
+    height: 70px;
+    max-width: fit-content;
+    margin: 0 20px;
+  }
+
+  .fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+  }
+</style>
+
+<script>
+  import { stored } from "@/hooks/stored";
+  import { defaultLanguage, getPreferredUserLanguage } from "@/lib/translation";
+
+  requestAnimationFrame(() => {
+    const elements = document.querySelectorAll(
+      ".rotating-background"
+    ) as NodeListOf<HTMLDivElement>;
+    const elementsLength = elements.length;
+    let lastScrollPosition = -1;
+
+    const scrollRotate = function () {
+      const scrollPosition = window.pageYOffset;
+
+      // Throttle the updates to only run if the scrollPosition has changed
+      // Check if the scroll position changed significantly (more than 2 pixels)
+      if (
+        lastScrollPosition > -1 &&
+        Math.abs(lastScrollPosition - scrollPosition) <= 2
+      ) {
+        return;
+      }
+      lastScrollPosition = scrollPosition;
+
+      const rotation = scrollPosition / 5; // Adjust the /5 to control the speed of rotation
+      const windowHeight = window.innerHeight;
+      const fadeStart = windowHeight * 0.8;
+
+      let opacity = 0.08;
+      if (scrollPosition >= fadeStart) {
+        opacity = opacity - (scrollPosition - fadeStart) / windowHeight / 20;
+        opacity = Math.max(opacity, 0);
+      }
+
+      const rotationStyle = `rotate(${rotation}deg)`;
+
+      for (let i = 0; i < elementsLength; i++) {
+        elements[i].style.transform = rotationStyle;
+        elements[i].style.opacity = `${opacity}`;
+      }
+    };
+
+    const throttledScrollRotate = () => {
+      requestAnimationFrame(scrollRotate);
+    };
+
+    window.addEventListener("scroll", throttledScrollRotate);
+    //scrollRotate();
+    // preferred user language
+    const preferredLanguage = getPreferredUserLanguage();
+    const storedPreferredLanguage = stored("preferredLanguage", undefined);
+
+    // one-off redirect to preferred locale, only on first visit and landing page
+    if (typeof storedPreferredLanguage.get() === "undefined") {
+      storedPreferredLanguage.set(preferredLanguage);
+
+      if (preferredLanguage !== defaultLanguage) {
+        //console.log(`WOULD redirect to ${preferredLanguage}`)
+        //window.location.href = `/${preferredLanguage}`
+      }
+    }
+  });
+</script>

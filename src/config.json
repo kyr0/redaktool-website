@@ -1,0 +1,19 @@
+{
+	"productName": "RedakTool",
+	"githubLink": "https://github.com/kyr0/redaktool",
+	"linkedInProfile": "https://www.linkedin.com/in/aronhomberg/",
+
+	"addressLine1": "by Aron Homberg",
+	"addressLine2": "August-Horch-Str. 16",
+	"addressLine3": "80999 München",
+	"addressLine4": "",
+
+	"email": "hallo@redaktool.ai",
+	"mailChannelsFromEmail": "hallo@redaktool.ai",
+	"phone": "+49 (0) 170 5474455",
+	"legalName": "Aron Homberg",
+	"cookie": {
+		"name": "redaktool_website",
+		"cookies": []
+	}
+}

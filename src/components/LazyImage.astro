@@ -1,0 +1,100 @@
+---
+import { Image } from 'astro:assets'
+import { randomUUID } from 'crypto'
+import type { CSSProperties } from 'react'
+
+export interface Props {
+	id?: string
+	key?: string
+	src: string
+	width?: number
+	height?: number
+	alt: string
+	style?: CSSProperties
+	className?: string
+}
+
+const { id = randomUUID(), src, alt, height, width, className, style } = Astro.props as Props
+
+const placeholderWidth = Math.round(width||100 / 7)
+const placeholderHeight = Math.round(height||100 / 7)
+---
+
+<Image
+	id={id}
+	alt={alt}
+	
+	class={`${className} lite-image blur`}
+	data-src={src}
+	data-width={width || 'auto'}
+	data-height={height || 'auto'}
+	style={{ ...style, width: `${width}px`, height: `${height}px` }}
+	quality={2}
+	width={placeholderWidth}
+	height={placeholderHeight}
+	format={'jpeg'}
+	loading="lazy"  
+	decoding="async"
+	src={src}
+/>
+
+<script is:inline>
+
+	(() => {
+
+		const lazyLoad = async (element) => {
+			const { src, height, width } = element.dataset
+
+			const transformOptions = new URLSearchParams()
+			transformOptions.append('href', src)
+			transformOptions.append('h', height.toString())
+			transformOptions.append('w', width.toString())
+
+			const response = await fetch(`/_image?${transformOptions}`)
+
+			const imageString = await new Promise(async (resolve) => {
+				const reader = new FileReader()
+				reader.onloadend = () => resolve(reader.result)
+				reader.readAsDataURL(await response.blob())
+			})
+			element.setAttribute('src', imageString)
+
+			element.onload = () => {
+				const classes = element.getAttribute('class')
+				element.setAttribute('class', classes.concat(' loaded'))
+			}
+		}
+
+		const observer = new IntersectionObserver(
+			(entries) => {
+				const intersectingElements = entries.filter((v) => v.isIntersecting)
+				intersectingElements.forEach((v) => {
+					const classes = v.target.getAttribute('class').split(' ')
+					if (!classes.some((v) => v === 'loaded')) {
+						requestAnimationFrame(() => {
+							lazyLoad(v.target)
+						})
+					}
+				})
+			},
+			{ threshold: 0.01, rootMargin: '10%' }
+		)
+
+		const imageElements = document.getElementsByClassName('lite-image')
+		Array.from(Array(imageElements.length)).forEach((_, i) => {
+			observer.observe(imageElements.item(i))
+		})
+	})()
+</script>
+
+<style>
+	.blur {
+		filter: blur(40px);
+		transform: scale(1);
+	}
+
+	.loaded {
+		filter: blur(0px);
+		transition: 0.5s filter linear;
+	}
+</style>
