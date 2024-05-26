@@ -17,7 +17,9 @@ export const Logo = ({ className = "", width = 48, height = 48 }) => {
 				height={height}
 				className={cn("h-24 dark:hidden", className)}
 			/>
-			<span className={cn("ml-3 text-xl", className)}><strong>RedakTool</strong></span>
+			<span className={cn("ml-3 text-xl", className)}>
+				<strong>RedakTool</strong>
+			</span>
 		</>
 	);
 };

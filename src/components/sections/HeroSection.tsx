@@ -162,14 +162,14 @@ export const HeroSection = ({ t, l }) => {
 					<div className="flex flex-row gap-2 flex-wrap justify-between">
 						<div>
 							<div className="flex flex-row mt-12 mb-4">
-								<Radar className="w-12 h-12 dark:stroke-white mr-1" />
-								<MousePointerClick className="w-12 h-12 dark:stroke-white mr-1" />
-								<Mic className="w-12 h-12 dark:stroke-white mr-1" />
-								<Languages className="w-12 h-12 dark:text-white mr-1" />
-								<ListChecks className="w-12 h-12 dark:text-white mr-1" />
-								<CheckCheck className="w-12 h-12 dark:text-white mr-1" />
-								<PenLine className="w-12 h-12 dark:text-white mr-1" />
-								<SpellCheck2 className="w-12 h-12 dark:text-white" />
+								<Radar className="w-8 h-8 md:w-12 md:h-12 dark:stroke-white mr-1" />
+								<MousePointerClick className="w-8 h-8 md:w-12 md:h-12 dark:stroke-white mr-1" />
+								<Mic className="w-8 h-8 md:w-12 md:h-12 dark:stroke-white mr-1" />
+								<Languages className="w-8 h-8 md:w-12 md:h-12 dark:text-white mr-1" />
+								<ListChecks className="w-8 h-8 md:w-12 md:h-12 dark:text-white mr-1" />
+								<CheckCheck className="w-8 h-8 md:w-12 md:h-12 dark:text-white mr-1" />
+								<PenLine className="w-8 h-8 md:w-12 md:h-12 dark:text-white mr-1" />
+								<SpellCheck2 className="w-8 h-8 md:w-12 md:h-12 dark:text-white" />
 							</div>
 							<h2
 								className="lg:leading-tighter text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl hyphens-manual whitespace-nowrap"
@@ -205,7 +205,7 @@ export const HeroSection = ({ t, l }) => {
 										className="flex flex-row items-center w-full p-6"
 										onClick={onBrowserClick("chrome")}
 									>
-										<span className="flex flex-row items-center text-xl w-auto">
+										<span className="flex flex-row items-center text-md md:text-xl w-auto">
 											<SimpleIconsGooglechrome className="m-1" />{" "}
 											<span>Google Chrome</span>
 										</span>
@@ -219,7 +219,7 @@ export const HeroSection = ({ t, l }) => {
 										className="flex flex-row items-center w-full p-6"
 										onClick={onBrowserClick("firefox")}
 									>
-										<span className="flex flex-row items-center text-xl w-auto">
+										<span className="flex flex-row items-center text-md md:text-xl w-auto">
 											<CibMozillaFirefox className="m-1" />{" "}
 											<span>Mozilla Firefox</span>
 										</span>
@@ -233,7 +233,7 @@ export const HeroSection = ({ t, l }) => {
 										className="flex flex-row items-center w-full p-6"
 										onClick={onBrowserClick("edge")}
 									>
-										<span className="flex flex-row items-center text-xl w-auto">
+										<span className="flex flex-row items-center text-md md:text-xl w-auto">
 											<SimpleIconsMicrosoftedge className="m-1" />{" "}
 											<span>Microsoft Edge</span>
 										</span>
@@ -246,7 +246,7 @@ export const HeroSection = ({ t, l }) => {
 										className="flex flex-row items-center w-full p-6 "
 										onClick={onBrowserClick("safrari")}
 									>
-										<span className="flex flex-row items-center text-xl w-auto">
+										<span className="flex flex-row items-center text-md md:text-xl w-auto">
 											<MdiAppleSafari className="m-1" />{" "}
 											<span>Apple Safari</span>
 										</span>

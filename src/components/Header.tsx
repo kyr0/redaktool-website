@@ -503,11 +503,11 @@ export const Header = ({ language, localizedPaths, translations }) => {
 				<GithubLink
 					language={language}
 					translations={translations}
-					className={"!mr-2"}
+					className={"!mr-2  hidden md:visible"}
 				/>
 
 				<Link
-					className="!mr-2"
+					className="!mr-2 hidden md:visible"
 					href={config.linkedInProfile}
 					rel="noopener noreferrer"
 					target="_blank"

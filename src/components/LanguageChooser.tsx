@@ -37,7 +37,10 @@ export default function LanguageChooser({
 
 	return (
 		<DropdownMenu>
-			<DropdownMenuTrigger className="cursor-pointer mr-4" asChild>
+			<DropdownMenuTrigger
+				className="cursor-pointer mr-2 md:mr-4 -ml-4"
+				asChild
+			>
 				<Button
 					size="sm"
 					variant="link"
