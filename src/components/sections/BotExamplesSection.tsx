@@ -487,11 +487,11 @@ export default function BotExamplesSection({ t, l }) {
 					</h4>
 
 					<Link
-						href="#scroll=RegisterForLiveDemoSection"
+						href="#scroll=CustomerAppFeaturesSection"
 						className="rounded-md flex no-underline border-2  text-md py-1 px-2 md:py-2 md:px-3 mt-5 justify-center items-center text-lg shadow-sm"
 						variant="outline"
 						onClick={() => {
-							scroll("RegisterForLiveDemoSection");
+							scroll("CustomerAppFeaturesSection");
 						}}
 					>
 						<CalendarPlus className="h-6 w-6 mr-2" /> &nbsp;
