@@ -121,7 +121,7 @@ const { language, localizedPaths } = getLocalization(Astro);
       // Check if the scroll position changed significantly (more than 2 pixels)
       if (
         lastScrollPosition > -1 &&
-        Math.abs(lastScrollPosition - scrollPosition) <= 2
+        Math.abs(lastScrollPosition - scrollPosition) <= 1
       ) {
         return;
       }
