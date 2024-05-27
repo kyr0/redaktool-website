@@ -101,6 +101,18 @@ const { language, localizedPaths } = getLocalization(Astro);
   .fade-in.visible {
     opacity: 1;
   }
+
+  @keyframes scaleAndRotate {
+    0% {
+      transform: scale(1) rotate(0deg);
+    }
+    50% {
+      transform: scale(1.03) rotate(2.5deg);
+    }
+    100% {
+      transform: scale(1) rotate(0deg);
+    }
+  }
 </style>
 
 <script>

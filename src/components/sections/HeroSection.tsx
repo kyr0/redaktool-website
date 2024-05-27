@@ -6,10 +6,14 @@ import {
 	ArrowRightCircle,
 	ArrowUpRightIcon,
 	AsteriskIcon,
+	CalendarHeart,
 	CheckCheck,
 	FileArchive,
+	FlaskRound,
+	HeartHandshake,
 	Languages,
 	ListChecks,
+	LucideBaby,
 	Mic,
 	Mic2,
 	MousePointerClick,
@@ -117,7 +121,21 @@ export const HeroSection = ({ t, l }) => {
 									}}
 								>
 									{tr("waitingList.button", t, l)}
-									<ArrowUpRightIcon className="ml-2 h-6 w-6" />
+									<CalendarHeart className="ml-2 h-6 w-6" />
+								</Link>
+
+								<Link
+									className="inline-flex h-min-12 h-14 items-center justify-center rounded-md  px-6 py-3 text-md md:text-lg font-medium text-gray-900 shadow transition-colors hover:bg-gray-100/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-transparent border-dashed border-2 border-red-700 dark:border-red-900  dark:text-gray-500 bg-yellow-50 hover:bg-yellow-100 dark:bg-black dark:hover:bg-gray-900 dark:focus-visible:ring-gray-300"
+									href="#scroll=CustomerAppFeaturesSection"
+									style={{
+										animation: "scaleAndRotate 2.5s infinite",
+									}}
+									onClick={() => {
+										scroll("CustomerAppFeaturesSection");
+									}}
+								>
+									{tr("waitingList.betaTest", t, l)}
+									<FlaskRound className="ml-2 h-6 w-6" />
 								</Link>
 							</div>
 						</div>

@@ -29,13 +29,13 @@ export default {
 	},
 
 	"engagementApp.comingSoon": {
-		de: "Early Access",
-		en: "Early Access",
+		de: "Beta",
+		en: "Beta",
 	},
 
 	"engagementApp.descriptionText": {
-		de: "<strong>RedakTool</strong> ist nicht nur <strong>gratis</strong> sondern auch freie Software. Als Open-Source-Projekt ist RedakTool aber auf <strong>Ihre Mithilfe</strong> angewiesen. Für die <strong>Prompts/Ergebnisse</strong>, <strong>Datenquellen</strong>, die <strong>Fact-Check-Datenbank</strong> als auch die <strong>Benutzerfreundlichkeit</strong> braucht es Ihr Feedback, damit RedakTool <strong>immer besser</strong> werden kann.",
-		en: "<strong>RedakTool</strong> is not only <strong>free</strong> but also open-source software. As an open-source project, RedakTool relies on <strong>your contributions</strong>. For improving <strong>prompts/results</strong>, <strong>data sources</strong>, the <strong>fact-check database</strong>, and the <strong>user experience</strong>, we need your feedback to make RedakTool <strong>better and better</strong>.",
+		de: "<strong>RedakTool</strong> ist nicht nur <strong>gratis</strong> sondern auch <strong>quellenoffene</strong> Software. Als <strong>nicht-kommerzielles</strong> Projekt ist RedakTool auf <strong>Ihre Mithilfe</strong> angewiesen. Für die <strong>Prompts/Ergebnisse</strong>, <strong>Datenquellen</strong>, die <strong>Fact-Check-Datenbank</strong> als auch die <strong>Benutzerfreundlichkeit</strong> braucht es Ihr Feedback, damit RedakTool <strong>immer besser</strong> werden kann.",
+		en: "<strong>RedakTool</strong> is not only <strong>free</strong> but also <strong>open-source</strong> software. As a <strong>non-commercial</strong> project, RedakTool relies on <strong>your contributions</strong>. For improving <strong>prompts/results</strong>, <strong>data sources</strong>, the <strong>fact-check database</strong>, and the <strong>user experience</strong>, we need your feedback to make RedakTool <strong>better and better</strong>.",
 	},
 
 	"engagementApp.step1Title": {

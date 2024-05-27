@@ -8,8 +8,12 @@ export default {
 		de: "Registrieren Sie sich gerne auf unserer Warteliste.",
 	},
 	"waitingList.button": {
-		en: "Join the Waiting List",
-		de: "Auf Warteliste eintragen",
+		en: "Waiting List",
+		de: "Warteliste",
+	},
+	"waitingList.betaTest": {
+		en: "Early Access",
+		de: "Early Access",
 	},
 	"waitingList.badgeTitle": {
 		en: "Coming Soon",
