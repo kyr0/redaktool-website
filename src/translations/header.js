@@ -20,12 +20,12 @@ export default {
 		en: "Menu",
 	},
 	title: {
-		de: "RedakTool - Die Open-Source KI-Extension für Redakteur:innen",
-		en: "RedakTool - The open-source AI extension for editors",
+		de: "RedakTool - Das freie KI-Tool für Redakteur:innen",
+		en: "RedakTool - The open-source AI tool for professional editors",
 	},
 	"og.title": {
-		de: "RedakTool - Die Open-Source KI-Extension für Redakteur:innen",
-		en: "RedakTool - The open-source AI extension for editors",
+		de: "RedakTool - Das freie KI-Tool für Redakteur:innen",
+		en: "RedakTool - The open-source AI tool for professional editors",
 	},
 	"og.description": {
 		en: "A browser extension designed for editors and content creators. Think of it as an AI toolbox you can carry to any website.",
