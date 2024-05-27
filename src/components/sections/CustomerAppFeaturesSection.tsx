@@ -74,9 +74,12 @@ export function CustomerAppFeaturesSection({ t, l }) {
 							</div>
 						</CardHeader>
 						<CardContent>
-							<p className="mb-4">
-								{tr("engagementApp.appTeaserDescription", t, l)}
-							</p>
+							<p
+								className="mb-4"
+								dangerouslySetInnerHTML={{
+									__html: tr("engagementApp.appTeaserDescription", t, l),
+								}}
+							/>
 							<ProductUpdates
 								translations={t}
 								language={l}

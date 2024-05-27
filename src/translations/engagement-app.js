@@ -24,8 +24,8 @@ export default {
 	},
 
 	"engagementApp.appTeaserDescription": {
-		de: "Im Rahmen eines kurzen User Interviews können Sie das RedakTool auch schon jetzt ausprobieren!",
-		en: "Participate in a short user interview to try RedakTool now!",
+		de: "Im Rahmen eines kurzen <strong>User Interviews</strong> können Sie <strong>RedakTool</strong> auch schon jetzt ausprobieren!<br /><br /><a href='/redaktool/Intro.pdf' target='_blank' style='text-decoration:underline'>Ablauf eines User-Interviews (PDF)</a>",
+		en: "Take part in a brief <strong>user interview</strong> to experience <strong>RedakTool</strong> firsthand!<br /><br /><a href='/redaktool/Intro_EN.pdf' target='_blank' style='text-decoration:underline'>User Interview Process (PDF)</a>",
 	},
 
 	"engagementApp.comingSoon": {
