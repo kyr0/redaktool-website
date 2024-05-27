@@ -12,7 +12,7 @@ export default {
 		de: "RedakTool schreibt wie ein Mensch und kann auch mit schwierigen Situationen umgehen.",
 	},
 	"features.sectionDescription": {
-		en: "The primary goal of RedakTool is to extract the highest quality writing from AI models. Dynamic instructions are generated for each task from prompt templates. With precise parameterization via API and your personal style examples, RedakTool guides the AI to better results. Over time, RedakTool learns more about your writing style, delivering increasingly refined results.",
+		en: "The primary goal of RedakTool is to get the highest quality of writing from AI models. Through appropriate parameterization, prompt templates, and API integration, RedakTool steers the AI towards better performance. Additionally, RedakTool learns your unique writing style over time, allowing it to produce increasingly refined results.",
 		de: "Das maßgebliche Ziel für RedakTool ist es, aus KI-Modellen maximal gute Schreibqualität herauszuholen. Durch passende Parametrisierung, Prompt-Vorlagen und per API bringt RedakTool die KI auf eine bessere Spur. Zusätzlich erlernt RedakTool mit der Zeit ihren individuellen Schreibstil, und kann so immer bessere Ergebnisse erzielen.",
 	},
 	"features.badgeText": {
