@@ -27,29 +27,20 @@ Bitte beachten Sie, dass alle auf dieser Webseite verwendeten Bilder entweder li
 
 Auf unserer Website verwenden wir lizensierte Bilder, deren Rechte sorgfältig beachtet und klar gekennzeichnet sind. Hier finden Sie eine Auflistung spezifischer Bilder, deren Autoren und die jeweiligen Lizenzen:
 <br /><br />
-<a href="/#scroll=ServicesSection" target="_blank" title="Enterprise Services / Integrationen">
-    Bild 1, "Enterprise Services / Integrationen"
-</a> 
-von 
-<a href="https://unsplash.com/de/fotos/mann-der-vor-menschen-steht-die-neben-einem-tisch-mit-laptops-sitzen-gMsnXqILjp4" target="_blank"  title="Campaign Creators, campaign_creators auf Unsplash">
-    Campaign Creators, campaign_creators auf Unsplash
-</a>, 
-<a href="https://unsplash.com/de/lizenz" target="_blank"  title="Unsplash-Lizenz">Unsplash-Lizenz</a>
-<br />
-<a href="/#scroll=ServicesSection" target="_blank"  title="Enterprise Services / Anpassungen">
-    Bild 2, "Enterprise Services / Anpassungen"
-</a> 
-von 
-<a href="https://unsplash.com/de/fotos/person-die-auf-whitepaper-schreibt-qC2n6RQU4Vw" target="_blank"  title="UX Indonesia, uxindo auf Unsplash">
-    UX Indonesia, uxindo auf Unsplash
-</a>, 
-<a href="https://unsplash.com/de/lizenz" target="_blank"  title="Unsplash-Lizenz">Unsplash-Lizenz</a>
-<br />
-<a href="/#scroll=ServicesSection" target="_blank"  title="Enterprise Services / Support">
-    Bild 3, "Enterprise Services / Support"
-</a> 
-von 
-<a href="https://unsplash.com/de/fotos/oberteil-mit-blauem-kragen-fur-herren-in-der-nahe-des-silbernen-macbook-97HfVpyNR1M" target="_blank"  title="Austin Distel, austindistel auf Unsplash">
-    Austin Distel, austindistel auf Unsplash
-</a>, 
-<a href="https://unsplash.com/de/lizenz"  target="_blank" title="Unsplash-Lizenz">Unsplash-Lizenz</a>
+Bild 1, <a href="/#scroll=CustomerAppFeaturesSection" target="_blank">Early Access, User Interview</a> von <a href="https://unsplash.com/de/fotos/person-die-auf-weissem-papier-schreibt-gcsNOsPEXfs" target="_blank">firmbee, campaign_creators on Unsplash</a>, <a href="https://unsplash.com/license" target="_blank">Unsplash Lizenz</a><br />
+
+
+<p><br />
+<strong>Gefördert von:</strong><br />
+<a
+    href="https://www.media-lab.de/de/"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    <img
+        src="/logos/mtl-powered-by.png"
+        className="mt-0 inline-block max-h-16 md:max-h-20 lg:max-h-24 w-fit md:mt-4 lg:mt-4"
+        alt="Media Tech Lab Bayern Logo"
+    />
+</a>
+</p>

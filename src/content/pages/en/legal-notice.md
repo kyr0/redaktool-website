@@ -31,3 +31,19 @@ On our website, we use licensed images whose rights are carefully observed and c
 <br />
 <!-- Image 1 -->
 Image 1, <a href="/#scroll=CustomerAppFeaturesSection" target="_blank">Early Access, User Interview</a> by <a href="https://unsplash.com/de/fotos/person-die-auf-weissem-papier-schreibt-gcsNOsPEXfs" target="_blank">firmbee, campaign_creators on Unsplash</a>, <a href="https://unsplash.com/license" target="_blank">Unsplash License</a><br />
+
+
+<p><br />
+<strong>Gefördert von:</strong><br />
+<a
+    href="https://www.media-lab.de/de/"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    <img
+        src="/logos/mtl-powered-by.png"
+        className="mt-0 inline-block max-h-16 md:max-h-20 lg:max-h-24 w-fit md:mt-4 lg:mt-4"
+        alt="Media Tech Lab Bayern Logo"
+    />
+</a>
+</p>

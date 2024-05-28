@@ -19,6 +19,10 @@ export default {
 		en: "Supported by:",
 		de: "Gefördert durch:",
 	},
+	"herosection.mtlLink": {
+		en: "https://www.media-lab.de/en/",
+		de: "https://www.media-lab.de/de/",
+	},
 	"herosection.button1Text": {
 		en: "Learn more",
 		de: "Mehr erfahren",

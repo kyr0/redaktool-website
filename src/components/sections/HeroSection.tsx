@@ -85,11 +85,17 @@ export const HeroSection = ({ t, l }) => {
 
 						<span className="text-lg md:text-xl lg:text-2xl mt-8 flex flex-col items-center md:items-start">
 							<span>{tr("herosection.supportedBy", t, l)}</span>
-							<img
-								src="/logos/mtl-powered-by.png"
-								className="mt-0 inline-block max-h-16 md:max-h-20 lg:max-h-24 w-fit md:mt-4 lg:mt-4"
-								alt="Media Tech Lab Bayern Logo"
-							/>
+							<a
+								href={tr("herosection.mtlLink", t, l)}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<img
+									src="/logos/mtl-powered-by.png"
+									className="mt-0 inline-block max-h-16 md:max-h-20 lg:max-h-24 w-fit md:mt-4 lg:mt-4"
+									alt="Media Tech Lab Bayern Logo"
+								/>
+							</a>
 						</span>
 					</span>
 
