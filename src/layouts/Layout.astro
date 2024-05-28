@@ -1,7 +1,7 @@
 ---
 import config from "../config.json";
 import { ViewTransitions } from "astro:transitions";
-import "@/style/global.css";
+import "@/style/global.scss";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { plainify } from "../lib/text-converter";
@@ -70,13 +70,6 @@ if (!canonical) {
     </script>
 
     <ViewTransitions />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&display=swap"
-      rel="stylesheet"
-    />
 
     <link
       rel="preload"

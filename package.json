@@ -23,6 +23,7 @@
     "@astrojs/vercel": "^6.1.0",
     "@biomejs/biome": "^1.5.3",
     "@elasticemail/elasticemail-client-ts-axios": "^4.0.22",
+    "@fontsource/cairo-play": "^5.0.13",
     "@hookform/resolvers": "^3.3.4",
     "@nanostores/react": "^0.7.1",
     "@radix-ui/react-accordion": "^1.1.2",
