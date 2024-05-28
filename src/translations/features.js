@@ -4,8 +4,8 @@ export default {
 		de: "Ziele & Funktionen",
 	},
 	"features.heading": {
-		en: "🌟 Style & Precision",
-		de: "🌟 Stilsicher",
+		en: "🧰 AI Toolbox",
+		de: "🧰 KI-Werkzeugkasten",
 	},
 	"features.menuText": {
 		en: "RedakTool writes like a human and expertly handles complex situations.",

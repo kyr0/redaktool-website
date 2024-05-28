@@ -201,7 +201,7 @@ export function setCookie(name: string, value: string, days?: number): void {
 		date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
 		expires = `; expires=${date.toUTCString()}`;
 	}
-	document.cookie = `${name}=${encodeURIComponent(value)}${expires}; path=/`;
+	//document.cookie = `${name}=${encodeURIComponent(value)}${expires}; path=/`;
 }
 
 // Get a cookie value by its name
@@ -229,7 +229,7 @@ export function backupCookies(): string {
 export function restoreCookies(backup: string): void {
 	const cookiesObj: Record<string, string> = JSON.parse(backup);
 	for (const name in cookiesObj) {
-		setCookie(name, cookiesObj[name]);
+		//setCookie(name, cookiesObj[name]);
 	}
 }
 
