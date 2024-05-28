@@ -5,7 +5,7 @@ export default {
 	},
 	"herosection.tagLine1": {
 		de: "<strong>Extrahieren</strong> Sie Inhalte und <strong>Transkribieren</strong> Sie <strong>Videos</strong> und <strong>Podcasts</strong> live auf <strong>jeder</strong> Website. Nutzen Sie die besten <strong>KI</strong>-Modelle von <strong>GPT-4o</strong>, über <strong>Gemeni</strong>, bis <strong>Opus</strong>: Durch API-Anbindung besonders <strong>günstig</strong> und <strong>geschützt</strong>. <strong>Produktiver</strong> arbeiten: Auch mit <strong>freien Modellen</strong> und <strong>ohne</strong> Copy & Paste! <sup>*</sup>",
-		en: "<strong>Extract</strong> content and <strong>transcribe</strong> <strong>videos</strong> and <strong>podcasts</strong> live on <strong>any</strong> website. Utilize the top <strong>AI</strong> models from <strong>GPT-4o</strong> to <strong>Gemeni</strong> and <strong>Opus</strong>: Affordable and secure through API integration. <strong>Boost productivity</strong>: Even with free models and <strong>without</strong> copy & paste! <sup>*</sup>",
+		en: "<strong>Extract</strong> content, <strong>transcribe</strong> <strong>videos</strong> and <strong>podcasts</strong> live on <strong>any</strong> website. Utilize the top <strong>AI</strong> models from <strong>GPT-4o</strong> to <strong>Gemeni</strong> and <strong>Opus</strong>: Affordable and secure through API integration. <strong>Boost productivity</strong>: Even with free models and <strong>without</strong> copy & paste! <sup>*</sup>",
 	},
 	"herosection.tagLine2": {
 		en: "Coming soon",
