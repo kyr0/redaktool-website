@@ -394,6 +394,8 @@ export const Header = ({ language, localizedPaths, translations }) => {
 						{tr("waitingList.title", translations, language)}
 					</Link>
 
+					{/*
+
 					<h2 className="text-2xl font-bold text-black dark:text-white">
 						{tr("header.menu2Text", translations, language)}
 					</h2>
@@ -496,6 +498,7 @@ export const Header = ({ language, localizedPaths, translations }) => {
 					>
 						{tr("contact.menuTitle", translations, language)}
 					</Link>
+					*/}
 				</PopoverContent>
 			</Popover>
 

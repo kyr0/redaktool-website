@@ -4,8 +4,8 @@ export default {
 		en: "Browser Extension",
 	},
 	"header.menu2Text": {
-		de: "Unternehmen",
-		en: "Our Company",
+		de: "Projekt",
+		en: "Project",
 	},
 	"header.menu1.hero": {
 		de: "RedakTool",
@@ -13,18 +13,18 @@ export default {
 	},
 	"header.menu1.heroText": {
 		en: "The open-source AI tool for editors.",
-		de: "Das freie KI-Tool für Redakteur:innen.",
+		de: "KI-Werkzeugkasten für Redakteur:innen.",
 	},
 	"header.mobileMenuButtonText": {
 		de: "Menü",
 		en: "Menu",
 	},
 	title: {
-		de: "RedakTool - Das freie KI-Tool für Redakteur:innen",
+		de: "RedakTool - KI-Werkzeugkasten für Redakteur:innen",
 		en: "RedakTool - The open-source AI tool for professional editors",
 	},
 	"og.title": {
-		de: "RedakTool - Das freie KI-Tool für Redakteur:innen",
+		de: "RedakTool - KI-Werkzeugkasten für Redakteur:innen",
 		en: "RedakTool - The open-source AI tool for professional editors",
 	},
 	"og.description": {

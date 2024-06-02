@@ -1,15 +1,32 @@
 export default {
 	"herosection.headline": {
-		de: "Das freie KI-Tool für Redakteur:innen.",
-		en: "The open-source AI tool for professional editors.",
+		de: "KI-Werkzeugkasten für Redakteur:innen.",
+		en: "AI toolbox for professional editors.",
 	},
 	"herosection.tagLine1": {
-		de: "<strong>Extrahieren</strong> Sie Inhalte und <strong>Transkribieren</strong> Sie <strong>Videos</strong> und <strong>Podcasts</strong> live auf <strong>jeder</strong> Website. Nutzen Sie die besten <strong>KI</strong>-Modelle von <strong>GPT-4o</strong>, über <strong>Gemeni</strong>, bis <strong>Opus</strong>: Durch API-Anbindung besonders <strong>günstig</strong> und <strong>geschützt</strong>. <strong>Produktiver</strong> arbeiten: Auch mit <strong>freien Modellen</strong> und <strong>ohne</strong> Copy & Paste! <sup>*</sup>",
-		en: "<strong>Extract</strong> content, <strong>transcribe</strong> <strong>videos</strong> and <strong>podcasts</strong> live on <strong>any</strong> website. Utilize the top <strong>AI</strong> models from <strong>GPT-4o</strong> to <strong>Gemeni</strong> and <strong>Opus</strong>: Affordable and secure through API integration. <strong>Boost productivity</strong>: Even with free models and <strong>without</strong> copy & paste! <sup>*</sup>",
+		de: "<strong>Extrahieren</strong> Sie Website-Content und <strong>Transkribieren</strong> Sie <strong>Medien-Inhalte</strong> direkt im Browser. Nutzen Sie die besten <strong>KI-Modelle</strong> günstiger und mit Kostenkalkulation. Durch API-Nutzung besonders <strong>datengeschützt</strong> und <strong>leistungsstark</strong>. <a href='https://www.anthropic.com/claude' target='_blank'><u>Anthropics</u></a>, <a href='https://cohere.com/command' target='_blank'><u>Cohere</u></a>, <a href='https://deepmind.google/technologies/gemini/' target='_blank'><u>Google</u></a>,  <a href='https://www.huggingface.co/' target='_blank'><u>HuggingFace</u></a>, <a href='https://openai.com/api/' target='_blank'><u>OpenAI</u></a>, <a href='https://www.perplexity.ai/' target='_blank'><u>Perplexity</u></a>: Selbst <strong><u><a href='https://ollama.com/library' target='_blank'>freie und eigene</a></u></strong> KI-Modelle werden unterstützt.",
+		en: "<strong>Extract</strong> website content and <strong>transcribe</strong> <strong>media content</strong> directly in-browser. Utilize the top <strong>AI models</strong> cheaper and with budgeting. More privacy and increased efficiency through API integration. <a href='https://www.anthropic.com/claude' target='_blank'><u>Anthropics</u></a>, <a href='https://cohere.com/command' target='_blank'><u>Cohere</u></a>, <a href='https://deepmind.google/technologies/gemini/' target='_blank'><u>Google</u></a>, <a href='https://www.huggingface.co/' target='_blank'><u>HuggingFace</u></a>,  <a href='https://openai.com/api/' target='_blank'><u>OpenAI</u></a>, <a href='https://www.perplexity.ai/' target='_blank'><u>Perplexity</u></a>: Even <strong><u><a href='https://ollama.com/library' target='_blank'>free and custom</a></u></strong> AI models are supported.",
 	},
+
 	"herosection.tagLine2": {
 		en: "Coming soon",
 		de: "Schon bald ready",
+	},
+	"herosection.mainFeature1": {
+		en: "transcribe",
+		de: "transkribieren",
+	},
+	"herosection.mainFeature2": {
+		en: "create content",
+		de: "Content erstellen",
+	},
+	"herosection.mainFeature3": {
+		de: "mit freier KI-Wahl",
+		en: "with free AI model choice",
+	},
+	"herosection.contextHeadline": {
+		en: "Strong AI tools",
+		de: "Starke KI-Werkzeuge",
 	},
 	"herosection.tagLine3": {
 		de: `* Bis zu 40% höhere Produktivität und bis zu 18% bessere Arbeitsergebnisse: Forschende des MIT zeigen in einer <a class="underline" href="https://www.science.org/doi/10.1126/science.adh2586" target="_blank">aktuellen Studie</a>, welche Ergebnisse beim Einsatz moderner KI-Modelle zu erwarten sind. MIT Economics Department, 2023.`,

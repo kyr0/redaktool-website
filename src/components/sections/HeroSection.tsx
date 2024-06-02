@@ -6,6 +6,7 @@ import {
 	ArrowRightCircle,
 	ArrowUpRightIcon,
 	AsteriskIcon,
+	BrainCircuit,
 	CalendarHeart,
 	CheckCheck,
 	FileArchive,
@@ -84,18 +85,20 @@ export const HeroSection = ({ t, l }) => {
 						/>
 
 						<span className="text-lg md:text-xl lg:text-2xl mt-8 flex flex-col items-center md:items-start">
-							<span>{tr("herosection.supportedBy", t, l)}</span>
-							<a
-								href={tr("herosection.mtlLink", t, l)}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<img
-									src="/logos/mtl-powered-by.png"
-									className="mt-0 inline-block max-h-16 md:max-h-20 lg:max-h-24 w-fit md:mt-4 lg:mt-4"
-									alt="Media Tech Lab Bayern Logo"
-								/>
-							</a>
+							<ul>
+								<li className="flex flex-row items-center">
+									<Mic className="w-8 h-8 md:w-12 md:h-12 dark:stroke-white mr-1" />{" "}
+									<span>{tr("herosection.mainFeature1", t, l)}</span>
+								</li>
+								<li className="flex flex-row items-center">
+									<PenLine className="w-8 h-8 md:w-12 md:h-12 dark:stroke-white mr-1" />{" "}
+									<span>{tr("herosection.mainFeature2", t, l)}</span>
+								</li>
+								<li className="flex flex-row items-center">
+									<BrainCircuit className="w-8 h-8 md:w-12 md:h-12 dark:stroke-white mr-1" />{" "}
+									<span>{tr("herosection.mainFeature3", t, l)}</span>
+								</li>
+							</ul>
 						</span>
 					</span>
 
@@ -157,7 +160,7 @@ export const HeroSection = ({ t, l }) => {
 				<div className="mx-auto rounded-t-xl object-cover w-full h-min">
 					<div className="relative items-center justify-center flex border-none drop-shadow-md z-1 mx-auto overflow-hidden rounded-md object-cover w-full bg-contain h-min lg:max-w-[1200px]">
 						<div
-							className="w-full h-fit items-stretch"
+							className="w-full h-fit items-stretch relative "
 							style={{
 								width: "100%",
 								height: "600px",
@@ -166,7 +169,24 @@ export const HeroSection = ({ t, l }) => {
 								backgroundPosition: "center",
 								backgroundRepeat: "no-repeat",
 							}}
-						/>
+						>
+							<div className="flex flex-col absolute bottom-10 right-0 z-10 text-lg rounded-lg p-4 bg-white dark:bg-black dark:bg-opacity-50">
+								<span className="font-bold">
+									{tr("herosection.supportedBy", t, l)}
+								</span>
+								<a
+									href={tr("herosection.mtlLink", t, l)}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<img
+										src="/logos/mtl-powered-by.png"
+										className="mt-0 inline-block max-h-16 md:max-h-20 lg:max-h-24 w-fit md:mt-4 lg:mt-4"
+										alt="Media Tech Lab Bayern Logo"
+									/>
+								</a>
+							</div>
+						</div>
 
 						{/*<VideoPlayer className="w-full h-full grayscale" poster={tr('herosection.posterUrl', t, l)} src={tr('herosection.videoUrl', t, l)} />*/}
 
@@ -185,15 +205,9 @@ export const HeroSection = ({ t, l }) => {
 				<div className="grid max-w-[1300px] pt-12 md:pt-12 lg:pt-12 xl:pt-0 mx-auto gap-4 px-4 sm:px-6 md:px-10 md:grid-cols-2 md:gap-16">
 					<div className="flex flex-row gap-2 flex-wrap justify-between">
 						<div>
-							<div className="flex flex-row mt-12 mb-4">
-								<Radar className="w-8 h-8 md:w-12 md:h-12 dark:stroke-white mr-1" />
-								<MousePointerClick className="w-8 h-8 md:w-12 md:h-12 dark:stroke-white mr-1" />
-								<Mic className="w-8 h-8 md:w-12 md:h-12 dark:stroke-white mr-1" />
-								<Languages className="w-8 h-8 md:w-12 md:h-12 dark:text-white mr-1" />
-								<ListChecks className="w-8 h-8 md:w-12 md:h-12 dark:text-white mr-1" />
-								<CheckCheck className="w-8 h-8 md:w-12 md:h-12 dark:text-white mr-1" />
-								<PenLine className="w-8 h-8 md:w-12 md:h-12 dark:text-white mr-1" />
-								<SpellCheck2 className="w-8 h-8 md:w-12 md:h-12 dark:text-white" />
+							<div className="flex flex-row mt-12 mb-4 text-2xl font-bold">
+								<BrainCircuit className="w-8 h-8 dark:stroke-white mr-2" />
+								{tr("herosection.contextHeadline", t, l)}
 							</div>
 							<h2
 								className="lg:leading-tighter text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl hyphens-manual whitespace-nowrap"
@@ -202,7 +216,7 @@ export const HeroSection = ({ t, l }) => {
 								}}
 							/>
 							<h3
-								className="lg:leading-tighter text-gray-400 mt-4 font-normal text-lg tracking-tighter sm:text-lg md:text-xl lg:text-2xl hyphens-manual whitespace-nowrap"
+								className="lg:leading-tighter text-gray-700 dark:text-gray-400 mt-4 font-normal text-lg tracking-tighter sm:text-lg md:text-xl lg:text-2xl hyphens-manual whitespace-nowrap"
 								dangerouslySetInnerHTML={{
 									__html: tr("herosection.thirdHeadline", t, l),
 								}}
@@ -213,7 +227,7 @@ export const HeroSection = ({ t, l }) => {
 						</div>
 					</div>
 					<div>
-						<div className="mb-6 text-md md:text-lg text-gray-500">
+						<div className="mb-6 text-md md:text-lg text-gray-700 dark:text-gray-500">
 							<span
 								dangerouslySetInnerHTML={{
 									__html: tr("herosection.secondTagLine", t, l),
