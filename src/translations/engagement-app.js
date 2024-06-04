@@ -24,8 +24,8 @@ export default {
 	},
 
 	"engagementApp.appTeaserDescription": {
-		de: "Im Rahmen eines kurzen <strong>User Interviews</strong> können Sie <strong>RedakTool</strong> auch schon jetzt ausprobieren!<br /><br /><a href='/redaktool/Intro.pdf' target='_blank' style='text-decoration:underline'>Ablauf eines User-Interviews (PDF)</a>",
-		en: "Take part in a brief <strong>user interview</strong> to experience <strong>RedakTool</strong> firsthand!<br /><br /><a href='/redaktool/Intro_EN.pdf' target='_blank' style='text-decoration:underline'>User Interview Process (PDF)</a>",
+		de: "Im Rahmen eines kurzen <strong>User-Interviews</strong> haben Sie die Möglichkeit, <strong>RedakTool</strong> zu testen. Ihre Erfahrungen und Ideen fließen direkt in die Weiterentwicklung des Tools ein.<br /><br /><a href='/redaktool/Intro.pdf' target='_blank' style='text-decoration:underline'>Den genauen Ablauf eines User-Interviews finden Sie in dieser PDF-Datei.</a>",
+		en: "As part of a brief <strong>user interview</strong>, you have the opportunity to test <strong>RedakTool</strong>. Your experiences and ideas will directly contribute to the further development of the tool.<br /><br /><a href='/redaktool/Intro.pdf' target='_blank' style='text-decoration:underline'>You can find the detailed procedure for a user interview in this PDF file.</a>",
 	},
 
 	"engagementApp.comingSoon": {
@@ -34,8 +34,8 @@ export default {
 	},
 
 	"engagementApp.descriptionText": {
-		de: "<strong>RedakTool</strong> ist nicht nur <strong>gratis</strong> sondern auch <strong>quellenoffene</strong> Software. Als <strong>nicht-kommerzielles</strong> Projekt ist RedakTool auf <strong>Ihre Mithilfe</strong> angewiesen. Für die <strong>Prompts/Ergebnisse</strong>, <strong>Datenquellen</strong>, die <strong>Fact-Check-Datenbank</strong> als auch die <strong>Benutzerfreundlichkeit</strong> braucht es Ihr Feedback, damit RedakTool <strong>immer besser</strong> werden kann.",
-		en: "<strong>RedakTool</strong> is not only <strong>free</strong> but also <strong>open-source</strong> software. As a <strong>non-commercial</strong> project, RedakTool relies on <strong>your contributions</strong>. For improving <strong>prompts/results</strong>, <strong>data sources</strong>, the <strong>fact-check database</strong>, and the <strong>user experience</strong>, we need your feedback to make RedakTool <strong>better and better</strong>.",
+		de: "Als <strong>quelloffenes</strong>, <strong>nicht-kommerzielles</strong> Projekt, ist <strong>RedakTool</strong> auf Ihr Feedback angewiesen. Bitte helfen Sie mit, Prompts, Ergebnisse, Datenquellen, die Fact-Check-Datenbank und Benutzerfreundlichkeit durch Ihr Mitwirken zu verbessern.",
+		en: "<strong>open-source</strong>, <strong>non-commercial</strong> project, <strong>RedakTool</strong> relies on your feedback. Please contribute to improving prompts, results, data sources, the fact-check database, and user-friendliness through your participation.",
 	},
 
 	"engagementApp.step1Title": {

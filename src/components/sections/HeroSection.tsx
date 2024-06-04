@@ -100,6 +100,23 @@ export const HeroSection = ({ t, l }) => {
 								</li>
 							</ul>
 						</span>
+
+						<div className="flex flex-col text-xl rounded-lg p-4 mt-5">
+							<span className="font-bold">
+								{tr("herosection.supportedBy", t, l)}
+							</span>
+							<a
+								href={tr("herosection.mtlLink", t, l)}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<img
+									src="/logos/mtl-powered-by.png"
+									className="mt-0 inline-block max-h-16 md:max-h-20 lg:max-h-24 w-fit md:mt-4 lg:mt-4"
+									alt="Media Tech Lab Bayern Logo"
+								/>
+							</a>
+						</div>
 					</span>
 
 					<div className="flex flex-col text-center md:text-left space-y-4 pt-0 md:pt-2 lg:pt-2 w-[80%] md:w-[100%] mx-auto md:mr-auto">
@@ -170,6 +187,7 @@ export const HeroSection = ({ t, l }) => {
 								backgroundRepeat: "no-repeat",
 							}}
 						>
+							{/*
 							<div className="flex flex-col absolute bottom-10 right-0 z-10 text-lg rounded-lg p-4 bg-white dark:bg-black dark:bg-opacity-50">
 								<span className="font-bold">
 									{tr("herosection.supportedBy", t, l)}
@@ -186,6 +204,7 @@ export const HeroSection = ({ t, l }) => {
 									/>
 								</a>
 							</div>
+						*/}
 						</div>
 
 						{/*<VideoPlayer className="w-full h-full grayscale" poster={tr('herosection.posterUrl', t, l)} src={tr('herosection.videoUrl', t, l)} />*/}

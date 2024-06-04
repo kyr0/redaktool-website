@@ -12,8 +12,8 @@ export default {
 		de: "RedakTool schreibt wie ein Mensch und kann auch mit schwierigen Situationen umgehen.",
 	},
 	"features.sectionDescription": {
-		en: "The primary goal of RedakTool is to get the highest quality of writing from AI models. Through appropriate parameterization, prompt templates, and API integration, RedakTool steers the AI towards better performance. Additionally, RedakTool learns your unique writing style over time, allowing it to produce increasingly refined results.",
-		de: "Das maßgebliche Ziel für RedakTool ist es, aus KI-Modellen maximal gute Schreibqualität herauszuholen. Durch passende Parametrisierung, Prompt-Vorlagen und per API bringt RedakTool die KI auf eine bessere Spur. Zusätzlich erlernt RedakTool mit der Zeit ihren individuellen Schreibstil, und kann so immer bessere Ergebnisse erzielen.",
+		en: "RedakTool has one clear goal: reducing copy & paste between tools and to maximize the writing quality of AI models, to provide optimal support in your daily editorial work. By using tailored parameter settings, sophisticated prompt templates, and efficient API utilization, RedakTool achieves top-notch results. But that's not all: over time, RedakTool learns your individual writing style.",
+		de: "RedakTool hat ein klares Ziel: Copy & Paste zwischen verschiedenen Tools reduzieren und die Schreibqualität von KI-Modellen auf ein Maximum zu optimieren, um Sie damit im Redaktionsalltag bestmöglich zu unterstützen. Durch maßgeschneiderte Parametrisierung, ausgefeilte Prompt-Vorlagen und effiziente API-Nutzung erzielt RedakTool bestmögliche Ergebnisse. Doch damit nicht genug: Mit der Zeit erlernt RedakTool Ihren individuellen Schreibstil.",
 	},
 	"features.badgeText": {
 		en: "Goals, Features, Milestones",
@@ -24,8 +24,8 @@ export default {
 		de: "Tech-Innovation",
 	},
 	"features.conversationsDescription": {
-		en: "RedakTool encompasses extensive engineering: from a Web Components-based overlay UI, content autocorrelation, in-browser DSP processing, to the first browser-integrated vector database. Wherever possible, data is stored and processed locally.",
-		de: "In RedakTool steckt viel harte Engineering-Arbeit: Von der Web Components-basierten Overlay-UI, über Content-Autokorrelation, In-Browser DSP-Processing bis zur ersten Browser-integrierten Vektordatenbank: RedakTool macht einiges anders. Wo es nur geht, wird lokal gespeichert und ausgeführt.",
+		en: "Now it’s getting unusually complicated: RedakTool does many things differently. from a Web Components-based overlay UI, content autocorrelation, in-browser DSP processing, to the first browser-integrated vector database. Wherever possible, data is stored and processed locally. This saves costs and protects your data.",
+		de: "Jetzt wird's ausnahmsweise kompliziert: RedakTool macht einiges anders. Von der Web Components-basierten Overlay-UI, über Content-Autokorrelation, In-Browser DSP-Processing bis zur ersten Browser-integrierten Vektordatenbank: Wo es nur geht, wird lokal gespeichert und ausgeführt. Das spart Kosten und schützt Ihre Daten.",
 	},
 	"features.featureBadgeTextLive": {
 		en: "M. 1-2",
@@ -56,48 +56,48 @@ export default {
 		de: "Browser-Vektordatenbank",
 	},
 	"features.visionEnabledDescription": {
-		en: "When your customers use images in their reviews, our AI systems analyze what is depicted and furthermore understand the context of the images in relation to the written content.",
-		de: "Für RedakTool wurde das freie Nomic Embed Text V1 Embedding Modell in den Browser integriert. Gemeinsam mit einer Vektordatenbank, die speziell für den Browser entwickelt wurde, können Texte in Echtzeit in Vektoren umgewandelt werden. Diese Vektoren können dann für die Änlichkeitsanalyse der Bedeutung von Texten im NewsRadar-Modul, im Archiv, Verlauf und für das Fact-Checking verwendet werden.",
+		en: "For RedakTool, the free Nomic Embedding model has been integrated into the browser. Together with a vector database specifically developed for the browser, texts can be converted into vectors in real-time and stored efficiently. These vectors can then be used for similarity analysis of text meanings in the NewsRadar module, archive, history, and for fact-checking.",
+		de: "Für RedakTool wurde das freie Nomic Embedding-Modell in den Browser integriert. Gemeinsam mit einer speziell für den Browser entwickelten Vektordatenbank, können Texte in Echtzeit in Vektoren umgewandelt und effizient gespeichert werden. Diese Vektoren können dann für die Ähnlichkeitsanalyse der Bedeutung von Texten im NewsRadar-Modul, im Archiv, Verlauf und für das Fact-Checking verwendet werden.",
 	},
 	"features.polyglotTitle": {
 		en: "Token Budgeting",
 		de: "Token-Budgetierung",
 	},
 	"features.polyglotDescription": {
-		en: "RedakTool uses tokenization and pricing models to estimate or calculate the costs of using AI models upfront. The real-time calculation and display of usage costs give you full control over your AI budget.",
-		de: "RedakTool verwendet Tiktoken und Preismodell-Berechnungen um die Kosten für die Nutzung der KI-Modelle vorab zu berechnen oder zu approximieren. Die Kosten für die Nutzung der KI-Modelle werden in Echtzeit berechnet und angezeigt. So erhalten Sie volle Kontrolle über Ihr KI-Budget.",
+		en: "With RedakTool, you always keep an eye on costs. Our intelligent system utilizes Tiktoken and sophisticated pricing model calculations to precisely calculate or estimate the costs of using AI models in advance. In real-time, you can see how much the use of AI models will cost, enabling you to budget optimally.",
+		de: "Mit RedakTool behalten Sie die Kosten stets im Blick. Unser intelligentes System nutzt Tiktoken und ausgeklügelte Preismodell-Berechnungen, um die Kosten für die Nutzung der KI-Modelle vorab präzise zu berechnen oder zu schätzen. In Echtzeit sehen Sie, wie viel die Nutzung der KI-Modelle kosten wird - so können Sie optimal budgetieren.",
 	},
 	"features.safeEmpathicTitle": {
 		en: "Live Transcription",
 		de: "Live-Transkription",
 	},
 	"features.safeEmpathicDescription": {
-		en: "RedakTool features an advanced audio/video transmission algorithm that processes data in real-time directly in the browser. No downloads needed. High and low-frequency noise is filtered out using a DSP algorithm, and the data is segmented and sent incrementally to OpenAI Whisper for transcription, which is then displayed in real-time.",
-		de: "Für RedakTool wurde ein fortschrittlicher Audio/Video-Transmissions-Algorithmus entwickelt, der in Echtzeit Audio- und Videodaten im Browser verarbeiten kann, noch während sie abgespielt werden. Ein Herunterladen ist nicht nötig. Die Daten werden mit einem DSP-Algorithmus in Echtzeit von hoch- und niederfrequentem Rauschen bereinigt, automatisch an Sprechpausen geschnitten und in Increments an OpenAI Whisper gesendet. Die Transkriptionen werden dann in Echtzeit zurückgesendet und im Browser angezeigt.",
+		en: "RedakTool processes audio and video data directly in the browser as they are played—no downloads needed! Advanced DSP algorithms remove distracting background noise in real-time and automatically edit recordings at pauses in speech. The optimized audio snippets are then automatically sent to OpenAI Whisper for transcription. The result: high-quality live transcriptions that are immediately displayed in the browser.",
+		de: "RedakTool verarbeitet Audio- und Videodaten direkt im Browser, während sie abgespielt werden - ganz ohne Download! Durch ausgeklügelte DSP-Algorithmen werden störende Hintergrundgeräusche in Echtzeit entfernt und die Aufnahmen automatisch an Sprechpausen geschnitten. Die optimierten Audio-Schnipsel werden dann automatisch an OpenAI Whisper gesendet und transkribiert. Das Ergebnis: Live-Transkriptionen in bestechender Qualität, die sofort im Browser angezeigt werden.",
 	},
 	"features.eloquentTitle": {
 		en: "Community Prompts",
 		de: "Community Prompts",
 	},
 	"features.eloquentDescription": {
-		en: "Central to RedakTool's vision is the community aspect. Instead of each organization or editor creating and keeping their own prompts, users can create, improve, and share prompts. This collective effort enhances everyone's work quality, embodying the philosophy of free software.",
-		de: "Ein zentraler Punkt der Vision von RedakTool ist der Community-Gedanke. Anstatt dass jede Organisation und jede Redakteur:in ihre eigenen Prompts erstellt und für sich behält, können Prompts von allen Nutzer:innen erstellt, verbessert und geteilt werden. So können wir alle von den Erfahrungen der anderen profitieren und gemeinsam bessere Arbeitsergebnisse erzielen. Dies ist übrigens auch die Philosophie aller freier Software und wir möchten anregen, sie aktiv zu leben.",
+		en: "A central aspect of RedakTool's vision is the commitment to open-source principles and community collaboration. Instead of each organization and editor creating and keeping their own prompts, users can create, refine, and share prompts publicly. This allows everyone to benefit from each other's experiences and collectively achieve better results. This philosophy aligns with that of all free software, and we encourage active participation in this approach.",
+		de: "Ein zentraler Punkt der Vision von RedakTool ist der Open-Source und Community-Gedanke. Anstatt dass jede Organisation und jede Redakteur:in Ihre eigenen Prompts erstellt und für sich behält, können Prompts von allen Nutzer:innen erstellt, verbessert und öffentlich geteilt werden. So können wir alle von den Erfahrungen der anderen profitieren und gemeinsam bessere Arbeitsergebnisse erzielen. Dies ist übrigens auch die Philosophie aller freier Software und wir möchten anregen, sie aktiv zu leben.",
 	},
 	"features.mediatingTitle": {
 		en: "Maximum Data Privacy",
 		de: "Maximaler Datenschutz",
 	},
 	"features.mediatingDescription": {
-		en: "RedakTool is open-source software that only stores data locally in your browser. No data is saved on servers unless sent to an AI model. By using API services from AI model providers, you engage in contracts that typically offer high data protection and lower costs than user subscriptions. API-transmitted data is generally not stored or used for training. For maximum data security, use a local model like Ollama with a German-optimized Llama 3 model. Future updates will include a local model for redacting PII data.",
-		de: "RedakTool ist freie Software. Es speichert keine Daten auf Servern, sondern nur lokal, in Ihrem Browser. Alle Daten, die Sie in RedakTool eingeben, bleiben auf Ihrem Gerät, außer sie werden an ein KI-Modell gesendet. Dadurch, dass RedakTool jedoch mit den API-Angeboten der KI-Modell-Betreiber arbeitet, gehen Sie bei Beantragung der notwendigen API-Token Verträge ein, die ihre Daten in der Regel besonders schützen (und in der Regel auch günstiger sind als User Subscriptions). Per API übermittelte Daten werden in der Regel weder gespeichert, noch für's Training verwendet. Details entnehmen Sie jedoch bitte den Verträgen mit den Anbietern. Am besten sind Ihre Daten geschützt, wenn Sie selbst ein lokales Modell betreiben. z.B. mit Ollama auf der Basis eines für die deutsche Sprache optimierten Llama 3-Modells. In Zukunft soll für RedakTool darüber noch ein lokales Modell zur Redigierug von PII-Daten integriert werden.",
+		en: "RedakTool is an open-source software product that runs locally in your browser and doesn't require a server. No data is saved on servers unless sent to an AI model. By using API services from AI model providers, you engage in contracts that typically offer high data protection and lower costs than user subscriptions. API-transmitted data is generally not stored or used for training. For maximum data security, use a local model like Ollama with a German-optimized Llama 3 model. Future updates will include a local model for redacting PII data.",
+		de: "RedakTool ist eine freie Software, die lokal in Ihrem Webbrowser arbeitet und keinen Server benötigt. Alle Daten, die Sie in RedakTool eingeben, bleiben auf Ihrem Gerät, außer sie werden an ein KI-Modell gesendet. Dadurch, dass RedakTool jedoch mit den API-Angeboten der KI-Modell-Betreiber arbeitet, gehen Sie bei Beantragung der notwendigen API-Token Verträge ein, die Ihre Daten in der Regel besonders schützen (und in der Regel auch günstiger sind als User Subscriptions). Per API übermittelte Daten werden in der Regel weder gespeichert, noch für das Training verwendet. Details entnehmen Sie jedoch bitte den Verträgen mit den Anbietern. Am besten sind Ihre Daten geschützt, wenn Sie selbst ein lokales Modell betreiben. z. B. mit Ollama auf der Basis eines für die deutsche Sprache optimierten Llama 3-Modells. In Zukunft soll für RedakTool darüber noch ein lokales Modell zum Redigieren	von PII-Daten integriert werden.",
 	},
 	"features.integrationsTitle": {
 		en: "Text & Editing",
 		de: "Text & Lektorat",
 	},
 	"features.integrationsDescription": {
-		en: "RedakTool helps you articulate your thoughts accurately. Efficiency and quality are paramount. RedakTool checks content using Perplexity AI and its fact-check vector database, which you can enrich with your own data. Sources are cited, and linguistic inaccuracies are corrected.",
-		de: "RedakTool hilft Ihnen, Ihre Gedanken richtig in Worte zu fassen. Dabei steht neben der Effizienz auch die Qualität im Vordergrund. RedakTool prüft inhaltlich mittels Perplexity AI und seiner Fact-Check-Vektordatenbank, die Sie mit eigenen Daten anreichern. Quellen werden ausgewiesen. Sprachliche Ungenauigkeiten werden ausgebessert.",
+		en: "RedakTool helps you articulate your thoughts precisely and efficiently, prioritizing both speed and quality. Content is verified using Perplexity AI and an expandable fact-check vector database. Sources are automatically cited, and linguistic inaccuracies are corrected.",
+		de: "RedakTool unterstützt Sie dabei, Ihre Gedanken präzise und effizient in Worte zu fassen. Dabei steht neben der Schnelligkeit auch die Qualität im Fokus. Inhalte werden mittels Perplexity AI und einer erweiterbaren Fact-Check-Vektordatenbank geprüft. Quellen werden automatisch ausgewiesen und sprachliche Ungenauigkeiten korrigiert.",
 	},
 	"features.insightsDescription": {
 		en: "From content extraction to the NewsRadar module and transcription: RedakTool offers numerous features to support your research. Prompts specifically developed and tested for journalism assist you in this process.",
@@ -108,40 +108,40 @@ export default {
 		de: "NewsRadar",
 	},
 	"features.interactiveDashboardDescription": {
-		en: "This module regularly collects news via RSS/Atom feeds and web scraping, stores them in a local vector database, and presents them in an organized list. If your newsroom software provides a feed, it can be processed here as well. Content is sorted by relevance and grouped by topic. Signals are generated based on the frequency of news on a topic, and notifications are sent for significant updates. News sources (websites, feeds) are added manually.",
-		de: "Dieses Modul sammelt regulär Nachrichten über RSS/Atom-Feeds und Scraping aus dem Internet, speichert sie in der lokalen Vektordatenbank und stellt sie in einer übersichtlichen Liste dar. Stellt ihre NewsRoom-Software einen Feed online bereit, kann dieser hier ebenfalls verarbeitet werden. Inhalte werden nach Aktualität sortiert und nach Bedeutung (also danach, 'worum es geht') gruppiert. Mehrere News zu einem Thema erzeugen je nach zeitlicher Frequenz ein Signal. Ebenso wird ein Signal erzeugt, wenn News zu einem Thema eintreffen, das im Archiv gespeichert ist. Signale können als Notifications ausgegeben werden. News-Quellen (Webseiten, Feeds) werden manuell hinzugefügt.",
+		en: "With RedakTool's NewsRadar module, you always stay on top of the latest news. Whether it's RSS/Atom feeds, scraping, or your own newsroom software, NewsRadar collects and processes content from all relevant sources. The gathered news is neatly sorted by recency and intelligently grouped by topic, allowing you to quickly identify what's important and frequently reported. NewsRadar continuously learns: when news related to topics from your archive emerges, you'll receive a notification. This ensures you never miss the resurgence of old topics and debates. Configurable notifications help you stay informed about the current news landscape.",
+		de: "Mit dem NewsRadar-Modul von RedakTool haben Sie die neuesten Nachrichten immer im Blick. Egal ob RSS/Atom-Feeds, Scraping oder Ihre eigene NewsRoom-Software - NewsRadar sammelt und verarbeitet Inhalte aus allen relevanten Quellen. Die gesammelten News werden übersichtlich nach Aktualität sortiert und intelligent nach Themen gruppiert. So erkennen Sie auf einen Blick, was gerade wichtig ist und worüber gehäuft berichtet wird. NewsRadar lernt kontinuierlich dazu: Tauchen Nachrichten zu Themen aus Ihrem Archiv auf, erhalten Sie ein Signal. So verpassen Sie keine Wiederaufnahme alter Themen und Debatten. Durch konfigurierbare Notifications behalten Sie den Überblick über die aktuelle Nachrichtenlage.",
 	},
 	"features.trueInsightsTitle": {
 		en: "Transcription",
 		de: "Transkription",
 	},
 	"features.trueInsightsDescription": {
-		en: "Typically, audio and video content must be downloaded before professional transcription. With RedakTool, you can transcribe content directly on the website as you play it. You can also select content from your computer without uploading it, as all processing is done locally in your browser.",
-		de: "In der Regel müssen Audio- und Video-Inhalte mühsam heruntergeladen werden, bevor sie professionell transkribiert werden können. Mit RedakTool können Sie diese Inhalte nicht nur direkt auf der Website transkribieren sondern auch einfach, währenddessen Sie auf 'Play' geklickt haben. Desweiteren können Sie Inhalte von Ihrem Computer auswählen. Ein Hochladen findet nicht statt - alle Inhalte werden direkt im Browser transcodiert und transkribiert.",
+		en: "Forget the tedious process of downloading audio and video content for transcription. With RedakTool, you can transcribe content directly from the website—even while it’s playing. Alternatively, you can select saved files from your computer. RedakTool transcribes them instantly without the need to upload them first. All content is transcoded and transcribed directly in your browser—quickly, easily, and securely. This saves you time and effort in transcription, allowing you to focus on what matters most: optimizing and integrating your content into your workflow.",
+		de: "Vergessen Sie das mühsame Herunterladen von Audio- und Video-Inhalten für die Transkription. Mit RedakTool transkribieren Sie Inhalte direkt auf der Website – selbst beim Abspielen. Oder wählen Sie einfach gespeicherte Dateien auf Ihrem Rechner. RedakTool transkribiert sie sofort, ohne sie vorher hochladen zu müssen. Denn alle Inhalte werden direkt in Ihrem Browser transcodiert und transkribiert - schnell, einfach und sicher. So sparen Sie Zeit und Aufwand bei der Transkription und können sich auf das Wesentliche konzentrieren: Ihre Inhalte optimal zu nutzen und in Ihren Workflow einzubinden.",
 	},
 	"features.executiveAdvisorTitle": {
 		en: "Content Extraction",
 		de: "Content-Extraktion",
 	},
 	"features.executiveAdvisorDescription": {
-		en: "When visiting a website, RedakTool automatically analyzes and extracts the most relevant content using a graph-based autocorrelation algorithm. You can selectively extract additional content with a click, then process it further with other AI modules.",
-		de: "Wenn Sie eine Website besuchen, wird der Inhalt mit der höchsten Relevanz von RedakTool automatisch per graph-basiertem Autokorrelations-Algorithmus analysiert und extrahiert. Möchten Sie selektiv weiter Inhalte extrahieren, können Sie dies bequem per Mausklick tun. Den Content können sie anschließend selektieren und direkt mit den anderen KI-Modulen weiterverarbeiten.",
+		en: "When you visit a website, RedakTool automatically analyzes and extracts the most relevant content using a graph-based autocorrelation algorithm. Additional content can be easily extracted with a click. You can then select the extracted content and directly process it with our numerous AI modules, such as translation or summarization.",
+		de: "Wenn Sie eine Website besuchen, analysiert RedakTool automatisch per graph-basiertem Autokorrelations-Algorithmus die relevantesten Inhalte und extrahiert sie. Weitere Inhalte können Sie bequem per Mausklick extrahieren. Den Content können Sie anschließend selektieren und direkt mit unseren zahlreichen KI-Modulen weiterverarbeiten, zum Beispiel Übersetzung oder Zusammenfassung.",
 	},
 	"features.permissionModelTitle": {
 		en: "Translation",
 		de: "Übersetzung",
 	},
 	"features.permissionModelDescription": {
-		en: "Many editors and journalists work internationally, making quick and precise translation a crucial feature of RedakTool. Texts are translated in real-time into another language, considering the text's meaning, target audience, and style, including metaphors and idioms.",
-		de: "Viele Redakteur:innen und Journalist:innen sind international unterwegs. Die schnelle und präzise Übersetzung von Texten ist daher ein wichtiger Bestandteil von RedakTool. Mit der Übersetzungsfunktion können Sie Texte in Echtzeit in eine andere Sprache übersetzen. Dabei wird der Text in Vektoren umgewandelt und anschließend in die Zielsprache übersetzt. Dieses Tool bezieht die Bedeutung des Textes, die Zielgruppen-Definition und die Stilistik mit ein. Ferner werden auch Metaphern und Redewendungen berücksichtigt.",
+		en: "A fast and precise translation function is essential in an AI toolkit for editors. RedakTool translates texts into the target language in real-time, taking into account the text's meaning, target audience definition, and stylistic nuances. Metaphors and idioms are intelligently translated as well. This ensures you always receive high-quality translations that preserve the context and subtleties of the original text.",
+		de: "Nicht fehlen in einem KI-Werkzeugkasten für Redakteur:innen darf eine schnelle und präzise Übersetzungsfunktion. Damit werden Texte in Echtzeit in die Zielsprache übersetzt. RedakTool berücksichtigt dabei die Bedeutung des Textes, die Zielgruppen-Definition und die Stilistik. Auch Metaphern und Redewendungen werden intelligent übersetzt. So erhalten Sie stets hochwertige Übersetzungen, die den Kontext und die Feinheiten des Originaltexts bewahren.",
 	},
 	"features.mutliLanguageTitle": {
 		en: "Summary",
 		de: "Zusammenfassung",
 	},
 	"features.mutliLanguageDescription": {
-		en: "A common process is to extract, summarize, and evaluate texts, then create a new text from them. RedakTool supports both content summaries and chronological summaries (useful for interviews) along with parameters like maximum character count, relevant for editorial contexts.",
-		de: "Ein oft gelebter Prozess ist es, Texte zu extrahieren, zusammenzufassen und zu bewerten. Anschließend wird daraus ein neuer Text erstellt. RedakTool unterstützt neben der inhaltlichen Zusammenfassung auch die chronologische Variante (hilfreich z.B. für Interviews) sowie einige Parameter wie max. Zeichenanzahl etc., die für die Zusammenfassung im redaktionellen Kontext relevant sind.",
+		en: "From extracting and summarizing to evaluating texts, RedakTool supports the entire process. In addition to content summarization, the tool offers a chronological variant, which is particularly useful for interviews. You can also set parameters such as the maximum character count, ensuring you always receive summaries perfectly tailored to your editorial needs.",
+		de: "Vom Extrahieren über das Zusammenfassen bis hin zum Bewerten von Texten – RedakTool unterstützt den gesamten Prozess. Neben der inhaltlichen Zusammenfassung bietet das Tool auch eine chronologische Variante, die sich besonders für Interviews eignet. Zusätzlich können Sie Parameter wie die maximale Zeichenanzahl festlegen - so erhalten Sie stets Zusammenfassungen, die perfekt auf Ihre redaktionellen Anforderungen zugeschnitten sind.",
 	},
 	"features.multiTenantTitle": {
 		en: "Multi-Tenancy",
@@ -153,12 +153,12 @@ export default {
 	},
 
 	"features.reviewPlatformsTitle": {
-		en: "Creative Writing",
-		de: "Kreatives Schreiben",
+		en: "Content Coach",
+		de: "Content Coach",
 	},
 	"features.reviewPlatformsDescription": {
-		en: "Our creative writing module, inspired by OpenAI's 'Creative Writing Coach', offers tips to improve your text. You receive suggestions, constructive criticism, and a revised version of your text to use as inspiration.",
-		de: "Das Modul für kreatives Schreiben orientiert sich stark am 'Creative Writing Coach' von OpenAI und gibt Ihnen Tipps, wie Sie Ihren Text weiter verbessern können. Neben Anregungen und konstruktiver Kritik erhalten Sie auch eine überarbeitete Version Ihres Textes, die Sie als Inspiration verwenden können.",
+		en: "This feature is inspired by OpenAI's 'Creative Writing Coach'. You receive valuable tips, suggestions, and constructive feedback for your text. Additionally, the tool provides you with a revised version to inspire your own revisions.",
+		de: "Diese Funktion ist angelehnt an den 'Creative Writing Coach' von OpenAI. Sie erhalten wertvolle Tipps, Anregungen und konstruktives Feedback für Ihren Text. Zusätzlich liefert Ihnen das Tool eine überarbeitete Version als Inspiration für Ihre eigene Überarbeitung",
 	},
 
 	"features.reviewAppTitle": {
@@ -166,8 +166,8 @@ export default {
 		de: "Faktencheck",
 	},
 	"features.reviewAppDescription": {
-		en: "RedakTool uses Perplexity AI and its fact-check vector database to verify content. You can select data from publicly available sources and manually input them as a CSV file (Claim, Verdict, Sources) into the database.",
-		de: "RedakTool prüft inhaltlich mittels Perplexity AI und seiner Fact-Check-Vektordatenbank. Die Daten, die in die Fact-Check-Vektordatenbank einfließen, können Sie selbst aus öffentlich verfügbaren Quellen wählen und sogar manuell als CSV-Datei einlesen (Claim, Verdict, Sources).",
+		en: "Verify content using Perplexity AI and a fact-check vector database. Choose from publicly available sources or import your own data via CSV (Claim, Verdict, Sources).",
+		de: "Überprüfen Sie Inhalte mittels Perplexity AI und einer Fact-Check-Vektordatenbank. Wählen Sie selbst aus öffentlich verfügbaren Quellen oder importieren Sie eigene Daten per CSV (Claim, Verdict, Sources).",
 	},
 
 	"features.crmErpTitle": {
@@ -175,8 +175,8 @@ export default {
 		de: "Rechtschreibung & Stil",
 	},
 	"features.crmErpDescription": {
-		en: "RedakTool checks your texts for spelling and stylistic errors, including grammar. By leveraging style example texts and historical data differences, the quality of AI-generated texts improves over time, optimizing them to your style. Eventually, this will enable automated generation of personalized RLHF (Reinforcement Learning from Human Feedback) training data for fine-tuning top AI models (as demonstrated with OpenAI models).",
-		de: "RedakTool prüft Ihre Texte auf Rechtschreibfehler und Stilistik. Dabei wird auch die Grammatik geprüft und verbessert. Da RedakTool auf Stilbeispieltexte als auch auf die Differenz zwischen Verlaufsdaten und veröffentlichen Texten aus dem Archiv zurückgreifen kann, wird die Qualität der KI-generierten Texte mit der Zeit immer besser auf Ihren Stil optimiert. Perspektivisch wird es dadurch möglich sein, automatisiert personalisierte RLHF (Reinforcement Learning from Human Feedback)-Lerndaten für Few-Shot-Learning (Finetuning) der besten KI-Modelle zu generieren (für OpenAI-Modelle wurde dies bereits demonstriert).",
+		en: "RedakTool checks your texts for spelling, grammar, and style. By accessing style sample texts and analyzing historical data and published texts from the archive, RedakTool continuously optimizes the quality of AI-generated texts to match your individual writing style.",
+		de: "RedakTool prüft Ihre Texte auf Rechtschreibung, Grammatik und Stil. Durch den Zugriff auf Stilbeispieltexte und die Analyse von Verlaufsdaten und veröffentlichten Texten aus dem Archiv optimiert RedakTool die Qualität der KI-generierten Texte kontinuierlich an Ihren individuellen Schreibstil.",
 	},
 
 	"features.enterpriseSsoTitle": {
@@ -184,8 +184,8 @@ export default {
 		de: "Humanisieren",
 	},
 	"features.enterpriseSsoDescription": {
-		en: "A perfectly polished text without any variance often doesn't feel human. This can be felt and measured. To make your texts sound more human and reduce AI detection to at least 50/50, RedakTool can 'humanize' the text. This involves making creative suggestions to help you finalize the text accordingly.",
-		de: "Ein absolut perfekt geschliffener Text ohne jegliche Varianz fühlt sich oftmals nicht sehr menschlich an. Das ist nicht nur fühlbar, sondern auch messbar. Um Ihre Texte menschlicher klingen zu lassen und die KI-Erkennungsrate mindestens auf 50/50 zu senken, kann der Text abschließend 'humanisiert' werden. Dabei werden vorsichtig kreative Vorschläge gemacht, die Ihnen helfen, den Text entsprechend zu finalisieren.",
+		en: "A fully AI-generated text often doesn't feel very human, and this is measurable. To make your texts sound more human and reduce the AI detection rate to at least 50/50, the text can be 'humanized' at the end. This process carefully makes creative suggestions to help you finalize the text accordingly.",
+		de: "Ein vollständig durch KI erstellter Text fühlt sich oftmals nicht sehr menschlich an. Das ist auch messbar. Um Ihre Texte menschlicher klingen zu lassen und die KI-Erkennungsrate mindestens auf 50/50 zu senken, kann der Text abschließend 'humanisiert' werden. Dabei werden vorsichtig kreative Vorschläge gemacht, die Ihnen helfen, den Text entsprechend zu finalisieren.",
 	},
 
 	"features.coBrandingTitle": {
@@ -193,8 +193,8 @@ export default {
 		de: "Verlauf & Archiv",
 	},
 	"features.coBrandingDescription": {
-		en: "Most editors use a professional editorial system. RedakTool doesn't aim to change that. The modules for history only save the editing process and results locally per website. Once a text is finished, it is stored in an archive. This archive can be searched and used as a source of style example data to 'learn' and optimize the AI. In NewsRadar, these texts are used to detect new information related to previously published articles. Ultimately, you continue publishing your texts through your CMS.",
-		de: "Selbstverständlich arbeiten die meisten Redakteur:innen mit einem professionellen Redaktionsystem. RedakTool möchte das nicht ändern. Die Module für den Verlauf speichern daher pro Website lediglich den Verlauf des Bearbeitungsprozesses und die Ergebnisse lokal. Ist ein Text fertig, wird er in einem Archiv gespeichert. Dieses Archiv kann durchsucht werden, und wird als Stilbeispiel-Datenquelle zum 'lernen' und optimieren der KI verwendet. Im NewsRadar kommen diese Texte zum Einsatz um zu erkennen, ob es neue Informationen zu einem bereits veröffentlichten Artikel vorliegen. Sie veröffentlichen Ihre Texte letztlich weiterhin über Ihr CMS.",
+		en: "Most editors work with a professional editorial system, and RedakTool aims to complement that, not change it. Therefore, the modules for tracking save only the editing process history and results locally per website. Completed texts are stored in a searchable archive, which serves as a style sample data source for AI optimization.",
+		de: "Die meisten Redakteur:innen arbeiten mit einem professionellen Redaktionsystem. RedakTool möchte das nicht ändern. Die Module für den Verlauf speichern daher pro Website lediglich den Verlauf des Bearbeitungsprozesses und die Ergebnisse lokal. Fertige Texte landen in einem durchsuchbaren Archiv, das als Stilbeispiel-Datenquelle für die KI-Optimierung dient. Im NewsRadar erkennt RedakTool anhand der archivierten Texte, ob es neue Informationen zu einem veröffentlichten Artikel gibt. Die finale Veröffentlichung erfolgt weiterhin über Ihr CMS.",
 	},
 
 	"features.customizationTitle": {

@@ -12,16 +12,16 @@ export default {
 		de: "Warteliste",
 	},
 	"waitingList.betaTest": {
-		en: "Early Access",
-		de: "Early Access",
+		en: "Beta Test",
+		de: "Beta-Test",
 	},
 	"waitingList.badgeTitle": {
 		en: "Coming Soon",
 		de: "Coming Soon",
 	},
 	"waitingList.description": {
-		en: "Feel free to join our waiting list. We'll reach out to you via email as soon as RedakTool becomes widely available.",
-		de: "Registrieren Sie sich gerne auf unserer Warteliste. Sobald RedakTool generell verfügbar wird, erhalten Sie eine E-Mail.",
+		en: "Do you want to be among the first to use RedakTool? Then sign up for our waitlist today! As soon as RedakTool launches, we will notify you immediately via email.",
+		de: "Sie möchten zu den Ersten gehören, die RedakTool nutzen können? Dann tragen Sie sich noch heute in unsere Warteliste ein! Sobald RedakTool startet, informieren wir Sie umgehend per E-Mail.",
 	},
 	"waitingList.contextDescription": {
 		de: "<br />Möchten Sie <strong>RedakTool</strong> vielleicht schon <strong>jetzt</strong> testen?",

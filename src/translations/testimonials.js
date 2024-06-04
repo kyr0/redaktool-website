@@ -36,8 +36,8 @@ export default {
 		de: "Geschäftsführerin",
 	},
 	"testimonials.testimonial1Text": {
-		en: "RedakTool is a huge win for me. The transcription of my interviews works really well now and is much cheaper than before. Plus, it's really fun to keep improving the tool with Aron. He’s truly passionate about it!",
-		de: "RedakTool stellt für mich einen großen Gewinn dar. Die Transkription von meinen Interviews funktioniert schon richtig gut und ist jetzt auch viel günstiger als vorher. Außerdem macht echt Spaß das Tool mit Aron immer weiter zu verbessern. Er brennt richtig für das Thema!",
+		en: "For my newsletter, I am constantly on the lookout for tools that make my work easier and more efficient. With RedakTool, I have finally found the perfect solution: extracting, transcribing, summarizing content, and creating texts—all in one tool! No more tedious copying and pasting of countless prompts, plus access to all available AI models. This makes RedakTool an indispensable companion in my editorial routine.",
+		de: "Für meinen Newsletter bin ich ständig auf der Suche nach Tools, die meine Arbeit erleichtern und effizienter machen. Mit RedakTool habe ich endlich die perfekte Lösung gefunden: Inhalte extrahieren, transkribieren, zusammenfassen und daraus Texte erstellen - und das alles in einem einzigen Tool! Kein lästiges Copy und Paste mehr von unzähligen Prompts und darüber hinaus Zugriff auf alle verfügbaren KI-Modelle. Das macht RedakTool für mich zu einem unverzichtbaren Begleiter im Redaktionsalltag.",
 	},
 	"testimonials.testimonial1CompanyLogoUrlLight": {
 		en: "/testimonials/logos/10-o-clock.svg",
