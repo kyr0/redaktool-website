@@ -8,7 +8,7 @@ export interface IInquiry {
 	subject: string;
 	phone?: string;
 	companyName?: string;
-	audience: "live-demo" | "contact-sales";
+	audience: "live-demo" | "contact-sales" | "live-demo";
 }
 
 export const InquirySchema = new Schema<IInquiry & Document>({

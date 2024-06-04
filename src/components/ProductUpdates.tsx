@@ -69,7 +69,21 @@ export const ProductUpdates = ({
 				}),
 			});
 
-			if (response.status !== 200) {
+			const responseContact = await fetch("/api/contact", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify({
+					email: form.getValues().email,
+					phone: "unknown",
+					name: "Beta Tester",
+					message: `New beta user request from: ${form.getValues().email}`,
+					subject: "RedakTool.ai - Register For Beta-Test Request",
+				}),
+			});
+
+			if (response.status !== 200 && responseContact.status !== 200) {
 				setIsLoading(false);
 				form.setError("email", {
 					message: tr("productUpdates.errorMessage", translations, language),
