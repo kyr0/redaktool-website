@@ -135,12 +135,14 @@ export const Footer = ({ language, localizedPaths, translations }) => {
 						<ProductUpdates translations={translations} language={language} />
 
 						<div className="relative flex space-x-4 mt-auto bottom-0 justify-end h-full height-auto">
+							{/*
 							<GithubLink
 								inFooter={true}
 								className="mt-auto h-8 !-mr-2 !bg-black !hover:bg-black !dark:hover:bg-black"
 								language={language}
 								translations={translations}
 							/>
+							*/}
 							<Separator orientation="vertical" className="mt-auto h-6" />
 
 							<LanguageChooser
