@@ -503,11 +503,13 @@ export const Header = ({ language, localizedPaths, translations }) => {
 			</Popover>
 
 			<span className="ml-2 focus:outline-none flex items-center align-middle">
+				{/* show later
 				<GithubLink
 					language={language}
 					translations={translations}
 					className={"!mr-2  hidden md:visible"}
 				/>
+				*/}
 
 				<Link
 					className="!mr-2 hidden md:visible"
