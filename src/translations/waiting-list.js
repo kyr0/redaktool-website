@@ -21,7 +21,7 @@ export default {
 	},
 	"waitingList.description": {
 		en: "Do you want to be among the first to use RedakTool? Then sign up for our waitlist today! As soon as RedakTool launches, we will notify you immediately via email.",
-		de: "Sie möchten zu den Ersten gehören, die RedakTool nutzen können? Dann tragen Sie sich noch heute in unsere Warteliste ein! Sobald RedakTool startet, informieren wir Sie umgehend per E-Mail.",
+		de: "Sie möchten zu den Ersten gehören, die RedakTool nutzen können? Dann tragen Sie sich gleich heute in unsere Warteliste ein! Sobald RedakTool startet, informieren wir Sie per E-Mail.",
 	},
 	"waitingList.contextDescription": {
 		de: "<br />Möchten Sie <strong>RedakTool</strong> vielleicht schon <strong>jetzt</strong> testen?",

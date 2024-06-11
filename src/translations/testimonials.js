@@ -65,7 +65,7 @@ export default {
 	},
 	"testimonials.testimonial2Text": {
 		en: "Would you like to test RedakTool now and be featured here? Sign up for our waiting list. Let's talk about your editorial challenges. We look forward to your registration!",
-		de: "Möchten Sie RedakTool vielleicht jetzt schon testen und hier gefeatured werden? Registrieren Sie sich für unsere Warteliste. Lassen Sie uns über Ihre redaktionellen Herausforderungen sprechen. Wir freuen uns auf Ihre Anmeldung!",
+		de: "Möchten Sie RedakTool jetzt schon testen und hier gefeatured werden? Registrieren Sie sich für unsere Warteliste. Lassen Sie uns über Ihre redaktionellen Herausforderungen sprechen. Wir freuen uns auf Ihre Anmeldung!",
 	},
 	"testimonials.testimonial2CompanyLogoUrlLight": {
 		en: "/logos/ftr_logo.svg",

@@ -34,7 +34,7 @@ export default {
 	},
 
 	"engagementApp.descriptionText": {
-		de: "Als <strong>quelloffenes</strong>, <strong>nicht-kommerzielles</strong> Projekt, ist <strong>RedakTool</strong> auf Ihr Feedback angewiesen. Bitte helfen Sie mit, Prompts, Ergebnisse, Datenquellen, die Fact-Check-Datenbank und Benutzerfreundlichkeit durch Ihr Mitwirken zu verbessern.",
+		de: "Als <strong>quelloffenes</strong>, <strong>nicht-kommerzielles</strong> Projekt, ist <strong>RedakTool</strong> auf Feedback angewiesen. Bitte helfen Sie mit, Prompts, Ergebnisse, Datenquellen, die Fact-Check-Datenbank und Benutzerfreundlichkeit durch Ihr Mitwirken zu verbessern.",
 		en: "<strong>open-source</strong>, <strong>non-commercial</strong> project, <strong>RedakTool</strong> relies on your feedback. Please contribute to improving prompts, results, data sources, the fact-check database, and user-friendliness through your participation.",
 	},
 

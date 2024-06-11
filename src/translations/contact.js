@@ -13,7 +13,7 @@ export default {
 	},
 	"contact.description": {
 		en: "Have questions? I'm eager to hear from you. Just drop me a line, and I'll get back to you personally shortly.",
-		de: "Haben Sie Fragen? Ich freue mich von Ihnen zu hören. Schreiben Sie mir einfach. Ich melde mich in Kürze persönlich bei Ihnen.",
+		de: "Haben Sie Fragen? Ich freue mich von Ihnen zu hören.",
 	},
 	"contact.contextDescription": {
 		de: '<h3 class="text-center md:text-left text-black dark:text-white text-lg mt-4 mb-4 font-bold">Sie sind kein Enterprise-Kunde?</h3>\nDa wir ein Startup sind, können wir aktuell nur Enterprise-Kunden eine persönliche 1-to-1 Live-Demo anbieten. Sie können sich aber gerne auf unserer Warteliste eintragen. Wir melden mich bei Ihnen, sobald unser Produkt für Sie verfügbar ist.',

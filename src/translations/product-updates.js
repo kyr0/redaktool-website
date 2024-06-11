@@ -1,7 +1,7 @@
 export default {
 	"productUpdates.description": {
-		en: "Simply sign up for the beta test. You will receive an invitation email shortly.",
-		de: "Melden Sie sich einfach zum Beta-Test an. Sie erhalten in Kürze eine Einladungs-E-Mail.",
+		en: "Simply sign up for the beta test.",
+		de: "Melden Sie sich einfach zum Beta-Test an.",
 	},
 	"productUpdates.emailPlaceholder": {
 		en: "Your Email",
