@@ -34,7 +34,7 @@ export default {
 	},
 	"herosection.supportedBy": {
 		en: "Supported by:",
-		de: "Gefördert durch:",
+		de: "Gefördert von:",
 	},
 	"herosection.mtlLink": {
 		en: "https://www.media-lab.de/en/",
