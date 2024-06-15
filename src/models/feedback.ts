@@ -2,6 +2,7 @@ import pkg from "mongoose";
 const { Schema, model } = pkg;
 
 export interface IFeedback {
+	name: string;
 	message: string;
 	email: string;
 	usageStatistics?: string;
@@ -11,6 +12,10 @@ export interface IFeedback {
 }
 
 export const FeedbackSchema = new Schema<IFeedback & Document>({
+	name: {
+		type: String,
+		required: true,
+	},
 	message: {
 		type: String,
 		required: true,

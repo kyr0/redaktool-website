@@ -15,6 +15,7 @@ import {
 import type { LocalizedPaths } from "@/lib/translation";
 import { getEnv } from "@/lib/get-env";
 import { sanitizeUrl } from "@/lib/utils";
+import { FeedbackButton } from "@/components/FeedbackButton";
 
 //const MIXPANEL_TOKEN = import.meta.env.MIXPANEL_TOKEN
 
@@ -320,6 +321,13 @@ if (!canonical) {
       />
 
       <ScrollUpButton suppressHydrationWarning client:only="react" />
+
+      <FeedbackButton
+        suppressHydrationWarning
+        language={language}
+        translations={translations}
+        client:only="react"
+      />
 
       <!--
       <script data-astro-cookie-consent="mixpanel" type="text">

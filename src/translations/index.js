@@ -18,6 +18,7 @@ import servicesTranslations from "./services";
 import shareTranslations from "./share";
 import testimonialsTranslations from "./testimonials";
 import waitingListTranslations from "./waiting-list";
+import feedbackTranslations from "./feedback";
 
 export default {
 	...headerTranslations,
@@ -40,4 +41,5 @@ export default {
 	...legalNoticeTranslations,
 	...shareTranslations,
 	...formTranslations,
+	...feedbackTranslations,
 };
