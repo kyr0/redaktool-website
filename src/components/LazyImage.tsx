@@ -34,7 +34,7 @@ export const LiteImage: React.FC<Props> = ({
 	format = "webp",
 	astroAssetsPath = "_image",
 }) => {
-	const [loaded, setLoaded] = useState(false);
+	const [loaded, setLoaded] = useState(true);
 	const imageRef = useRef<HTMLImageElement>(null);
 	const placeholderWidth = Math.round(width / 7);
 	const placeholderHeight = Math.round(height / 7);
@@ -115,14 +115,14 @@ export const LiteImage: React.FC<Props> = ({
 			id={id}
 			alt={alt}
 			className={`${className} ${loaded ? "loaded" : "blur"}`}
-			src={transformedSrc}
+			src={src}
 			style={{
 				filter: loaded ? "blur(0px)" : "blur(40px)",
 				transition: "0.5s filter linear",
 				...style,
 			}}
-			width={placeholderWidth}
-			height={placeholderHeight}
+			width={width}
+			height={height}
 			loading="eager"
 			decoding="async"
 		/>
