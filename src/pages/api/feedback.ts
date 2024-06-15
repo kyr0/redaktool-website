@@ -12,57 +12,61 @@ export interface FeedbackInput {
 	smartlookSessionId?: string;
 }
 
+export const prerender = false;
+
 dotEnvConfig();
 
 export const POST: APIRoute = async ({ request }) => {
-	if (request.headers.get("Content-Type") !== "application/json") {
-		return new Response(null, { status: 400 });
+	if (request.headers.get("Content-Type") === "application/json") {
+		try {
+			const { url, name, email, usageStatistics, message, smartlookSessionId } =
+				(await request.json()) as FeedbackInput;
+
+			console.log("usageStatistics", usageStatistics);
+			console.log("message", message);
+			console.log("smartlookSessionId", smartlookSessionId);
+
+			await addFeedback({
+				email,
+				name,
+				usageStatistics,
+				message,
+				smartlookSessionId,
+				url,
+				sentDate: new Date(),
+			});
+
+			await sendEmail({
+				from: email,
+				subject: `RedakTool.ai - Feedback from ${name}`,
+				text: `URL:  ${new URL(url).pathname}${
+					new URL(url).hash
+				}\n\nFeedback: ${message}${
+					usageStatistics ? `\n\nUsage Statistics: ${usageStatistics}` : ""
+				}${
+					smartlookSessionId
+						? `\n\nSmartlook Session ID: ${smartlookSessionId}`
+						: ""
+				}`,
+			});
+
+			return new Response(
+				JSON.stringify({
+					success: true,
+				}),
+				{
+					status: 200,
+				},
+			);
+		} catch (e) {
+			console.error("ERROR", e);
+			return new Response(JSON.stringify({ type: "error", error: e.message }), {
+				status: 500,
+			});
+		}
 	}
-
-	try {
-		const { url, name, email, usageStatistics, message, smartlookSessionId } =
-			(await request.json()) as FeedbackInput;
-
-		console.log("usageStatistics", usageStatistics);
-		console.log("message", message);
-		console.log("smartlookSessionId", smartlookSessionId);
-
-		await addFeedback({
-			email,
-			name,
-			usageStatistics,
-			message,
-			smartlookSessionId,
-			url,
-			sentDate: new Date(),
-		});
-
-		await sendEmail({
-			from: email,
-			subject: `RedakTool.ai - Feedback from ${name}`,
-			text: `URL:  ${new URL(url).pathname}${
-				new URL(url).hash
-			}\n\nFeedback: ${message}${
-				usageStatistics ? `\n\nUsage Statistics: ${usageStatistics}` : ""
-			}${
-				smartlookSessionId
-					? `\n\nSmartlook Session ID: ${smartlookSessionId}`
-					: ""
-			}`,
-		});
-
-		return new Response(
-			JSON.stringify({
-				success: true,
-			}),
-			{
-				status: 200,
-			},
-		);
-	} catch (e) {
-		console.error("ERROR", e);
-		return new Response(JSON.stringify({ type: "error", error: e.message }), {
-			status: 500,
-		});
-	}
+	return new Response(
+		JSON.stringify({ success: false, error: "Invalid request" }),
+		{ status: 500 },
+	);
 };
