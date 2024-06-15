@@ -104,7 +104,7 @@ export const LiteImage: React.FC<Props> = ({
 			element.onload = () => setLoaded(true);
 			element.setAttribute("width", width.toString());
 			element.setAttribute("height", height.toString());
-			return transformPath;
+			return src;
 		},
 		[id, src, format, quality, width, height],
 	);

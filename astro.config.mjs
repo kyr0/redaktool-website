@@ -16,6 +16,7 @@ export default defineConfig({
 	},
 	adapter: vercel({
 		maxDuration: 60, // 1 minute max. CPU time usage
+		imageService: false,
 	}),
 	image: {
 		remotePatterns: [
