@@ -1,6 +1,7 @@
 import { type APIRoute } from "astro";
 import { sendEmail } from "@/lib/email";
 import { addFeedback } from "@/lib/db";
+import { config as dotEnvConfig } from "dotenv";
 
 export interface FeedbackInput {
 	url: string; // URL of the page where the feedback was submitted
@@ -10,6 +11,8 @@ export interface FeedbackInput {
 	message: string;
 	smartlookSessionId?: string;
 }
+
+dotEnvConfig();
 
 export const POST: APIRoute = async ({ request }) => {
 	if (request.headers.get("Content-Type") !== "application/json") {
