@@ -3,6 +3,7 @@ const { connect } = pkg;
 import { AudienceModel, type IAudience } from "@/models/audience";
 import { type IInquiry, InquiryModel } from "@/models/inquiry";
 import { getEnv } from "./get-env";
+import { FeedbackModel, type IFeedback } from "@/models/feedback";
 
 export const dbConnect = async () => {
 	const uri = `mongodb+srv://${getEnv("ATLAS_WEBSITE_ADMIN")}:${getEnv(
@@ -29,4 +30,9 @@ export const addToAudience = async (data: IAudience) => {
 export const addInquiry = async (data: IInquiry) => {
 	const newInquiry = new InquiryModel(data);
 	await newInquiry.save();
+};
+
+export const addFeedback = async (data: IFeedback) => {
+	const newFeedback = new FeedbackModel(data);
+	await newFeedback.save();
 };
