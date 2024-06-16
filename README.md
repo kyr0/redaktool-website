@@ -22,3 +22,13 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## Site Speed Results
+
+This site's codebase follows best practices for site speed, see the results here:
+
+<span align="center">
+    <p align="center">
+      <img src="./speed_test.png" width="400" title="Speed Test Results">
+    </p>
+</span>
