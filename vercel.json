@@ -1,7 +1,7 @@
 {
 	"headers": [
 		{
-			"source": "/api/(.*)",
+			"source": "/_render",
 			"headers": [
 				{
 					"key": "Access-Control-Allow-Origin",
