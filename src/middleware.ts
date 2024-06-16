@@ -3,26 +3,30 @@ import { defineMiddleware } from "astro:middleware";
 
 dotEnvConfig();
 
-export const onRequest = defineMiddleware(async (context, next) => {
-	const { request } = context;
-
-	// pre-flight request
+export const onRequest = defineMiddleware(async ({ request }, next) => {
 	if (request.method === "OPTIONS") {
-		console.log("Middleware allowed pre-flight request, 200 OK");
-		return new Response(null, { status: 200 });
-	}
-
-	// CORS
-	const origin = request.headers.get("Origin");
-	if (origin) {
-		request.headers.set("Access-Control-Allow-Origin", origin);
-		request.headers.set(
-			"Access-Control-Allow-Methods",
-			"GET, POST, PUT, DELETE, OPTIONS",
+		const headers = new Headers();
+		headers.append("Access-Control-Allow-Origin", "*");
+		headers.append("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+		headers.append(
+			"Access-Control-Allow-Headers",
+			"Origin, X-Requested-With, Content-Type, Accept",
 		);
-		request.headers.set("Access-Control-Allow-Headers", "Content-Type");
+		return new Response(null, { headers });
 	}
 
-	let response: Response | undefined;
-	return await next();
+	const response = await next();
+
+	const headers = new Headers(response.headers);
+	headers.append("Access-Control-Allow-Origin", "*");
+	headers.append("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+	headers.append(
+		"Access-Control-Allow-Headers",
+		"Origin, X-Requested-With, Content-Type, Accept",
+	);
+
+	return new Response(response.body, {
+		...response,
+		headers: headers,
+	});
 });
