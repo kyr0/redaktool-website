@@ -111,7 +111,7 @@ export const HeroSection = ({ t, l }) => {
 								rel="noopener noreferrer"
 							>
 								<img
-									src="/logos/mtl-powered-by.png"
+									src="/logos/mtl-powered-by.webp"
 									className="mt-0 inline-block max-h-16 md:max-h-20 lg:max-h-24 w-fit md:mt-4 lg:mt-4"
 									alt="Media Tech Lab Bayern Logo"
 								/>
@@ -181,7 +181,7 @@ export const HeroSection = ({ t, l }) => {
 							style={{
 								width: "100%",
 								height: "600px",
-								backgroundImage: `url('/redaktool/redaktool_screen_3d.png')`,
+								backgroundImage: `url('/redaktool/redaktool_screen_3d.webp')`,
 								backgroundSize: "contain",
 								backgroundPosition: "center",
 								backgroundRepeat: "no-repeat",
@@ -198,7 +198,7 @@ export const HeroSection = ({ t, l }) => {
 									rel="noopener noreferrer"
 								>
 									<img
-										src="/logos/mtl-powered-by.png"
+										src="/logos/mtl-powered-by.webp"
 										className="mt-0 inline-block max-h-16 md:max-h-20 lg:max-h-24 w-fit md:mt-4 lg:mt-4"
 										alt="Media Tech Lab Bayern Logo"
 									/>

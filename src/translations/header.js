@@ -36,8 +36,8 @@ export default {
 		en: "https://RedakTool.ai/en/",
 	},
 	"og.image": {
-		de: "/icons/logo.png",
-		en: "/icons/logo.png",
+		de: "/icons/logo.webp",
+		en: "/icons/logo.webp",
 	},
 	"header.githubLink": {
 		de: "Github",

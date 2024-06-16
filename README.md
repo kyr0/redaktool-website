@@ -1,6 +1,6 @@
 <span align="center">
     <p align="center">
-      <img src="./public/icons/logo.png" width="300" title="RedakTool Logo">
+      <img src="./public/icons/logo.webp" width="300" title="RedakTool Logo">
     </p>
 
   # RedakTool.ai Website

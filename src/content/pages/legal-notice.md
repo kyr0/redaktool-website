@@ -38,7 +38,7 @@ Bild 1, <a href="/#scroll=CustomerAppFeaturesSection" target="_blank">Early Acce
     rel="noopener noreferrer"
 >
     <img
-        src="/logos/mtl-powered-by.png"
+        src="/logos/mtl-powered-by.webp"
         className="mt-0 inline-block max-h-16 md:max-h-20 lg:max-h-24 w-fit md:mt-4 lg:mt-4"
         alt="Media Tech Lab Bayern Logo"
     />

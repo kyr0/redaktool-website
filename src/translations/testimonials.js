@@ -76,7 +76,7 @@ export default {
 		de: "/logos/ftr_logo.svg",
 	},
 	"testimonials.testimonial2PhotoUrl": {
-		en: "/testimonials/testimonial_3.jpg",
-		de: "/testimonials/testimonial_3.jpg",
+		en: "/testimonials/testimonial_3.webp",
+		de: "/testimonials/testimonial_3.webp",
 	},
 };
