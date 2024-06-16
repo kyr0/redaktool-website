@@ -1,11 +1,5 @@
-import * as Sentry from "@sentry/node";
 import { addToAudience } from "./db";
 import { getEnv } from "./get-env";
-
-Sentry.init({
-	dsn: getEnv("SENTRY_DSN"),
-	tracesSampleRate: 1.0,
-});
 
 export const prerender = false;
 
@@ -76,7 +70,6 @@ export const registerNewsletter = async (
 		return new Response(JSON.stringify({ success: true }));
 	} catch (e) {
 		console.log(e);
-		Sentry.captureException(e);
 
 		return new Response(JSON.stringify({ success: false, error: e }), {
 			status: 500,
