@@ -48,8 +48,8 @@ export default {
 		de: "/testimonials/logos/10-o-clock.svg",
 	},
 	"testimonials.testimonial1PhotoUrl": {
-		en: "/testimonials/photos/ute_muendlein.jpg",
-		de: "/testimonials/photos/ute_muendlein.jpg",
+		en: "/testimonials/photos/ute_muendlein.webp",
+		de: "/testimonials/photos/ute_muendlein.webp",
 	},
 	"testimonials.testimonial2Name": {
 		en: "Your Name?",
