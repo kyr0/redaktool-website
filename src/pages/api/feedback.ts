@@ -1,4 +1,4 @@
-import { type APIRoute } from "astro";
+import type { APIRoute } from "astro";
 import { sendEmail } from "@/lib/email";
 import { addFeedback } from "@/lib/db";
 import { config as dotEnvConfig } from "dotenv";
@@ -39,7 +39,9 @@ export const POST: APIRoute = async ({ request }) => {
 			await sendEmail({
 				from: email,
 				subject: `RedakTool.ai - Feedback from ${name}`,
-				text: `URL:  ${new URL(url).pathname}${
+				text: `${
+					email ? `\n\nE-Mail: ${email}` : ""
+				}\n\nURL:  ${new URL(url).pathname}${
 					new URL(url).hash
 				}\n\nFeedback: ${message}${
 					usageStatistics ? `\n\nUsage Statistics: ${usageStatistics}` : ""
