@@ -17,7 +17,7 @@ export default {
 	},
 	"testimonials.description": {
 		en: "Learn how RedakTool is already captivating editors in Germany.",
-		de: "Erfahren Sie, wie RedakTool schon jetzt Redakteur:innen in Deutschland begeistern.",
+		de: "Erfahren Sie, wie RedakTool schon jetzt Redakteur:innen in Deutschland begeistert.",
 	},
 	"testimonials.at": {
 		en: "at",
