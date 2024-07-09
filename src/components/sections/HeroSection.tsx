@@ -111,8 +111,13 @@ export const HeroSection = ({ t, l }) => {
 								rel="noopener noreferrer"
 							>
 								<img
-									src="/logos/mtl-powered-by.webp"
-									className="mt-0 inline-block max-h-16 md:max-h-20 lg:max-h-24 w-fit md:mt-4 lg:mt-4"
+									src="/logos/mtl_light.png"
+									className="mt-0 max-h-16 md:max-h-20 lg:max-h-24 w-fit md:mt-4 lg:mt-4 hidden dark:inline-block"
+									alt="Media Tech Lab Bayern Logo"
+								/>
+								<img
+									src="/logos/mtl_dark.png"
+									className="mt-0  max-h-16 md:max-h-20 lg:max-h-24 w-fit md:mt-4 lg:mt-4 inline-block dark:hidden"
 									alt="Media Tech Lab Bayern Logo"
 								/>
 							</a>
